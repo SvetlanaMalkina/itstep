@@ -56,7 +56,11 @@ input::placeholder {
     font-size: 16px;
     font-style: italic;
 }
-
-
-
-
+.photo {
+    border-color: aquamarine;
+    border-style: solid;
+    border-width: 2px;
+}
+.pyramid {
+    list-style-image: url("images/image1.png");
+}
