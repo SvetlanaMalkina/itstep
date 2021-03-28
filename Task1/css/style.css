@@ -64,3 +64,9 @@ input::placeholder {
 .pyramid {
     list-style-image: url("images/image1.png");
 }
+.test {
+    width: 200px;
+    font-style: normal;
+    color: black;
+    font-size: 16px;
+}
