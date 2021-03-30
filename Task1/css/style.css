@@ -1,15 +1,26 @@
 body {
     background-color: #f8f8f8;
 }
-
+.top {
+    background: mistyrose;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.top-title {
+    font-style: italic;
+    font-size: 20px;
+}
 .menu li {
     font-style: italic;
     list-style: none;
     font-size: 18px;
 }
 
-.menu li a {
+.menu-link {
     color: indigo;
+}
+.menu-link:hover{
+    color: darkviolet;
 }
 
 .title {
@@ -69,4 +80,9 @@ input::placeholder {
     font-style: normal;
     color: black;
     font-size: 16px;
+}
+.bottom {
+    background: mistyrose;
+    box-sizing: border-box;
+    padding: 10px;
 }

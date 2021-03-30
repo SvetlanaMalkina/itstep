@@ -6,15 +6,17 @@
     <title>Test</title>
 </head>
 <body>
-<h3>Меню</h3>
-<ul class="menu">
-    <li> <a href="index.html">Главная</a></li>
-    <li> <a href="catalog.html">Каталог</a></li>
-    <li> <a href="test.html">Подбор аромата</a></li>
-    <li> <a href="">Это интересно</a></li>
-    <li> <a href="contacts.html">Контакты</a></li>
-</ul>
-<hr>
+<div class="top">
+    <img alt="logo" src="images/logo.png">
+    <h3 class="top-title">Меню</h3>
+    <ul class="menu">
+        <li> <a class="menu-link" href="index.html">Главная</a></li>
+        <li> <a class="menu-link" href="catalog.html">Каталог</a></li>
+        <li> <a class="menu-link" href="test.html">Подбор аромата</a></li>
+        <li> <a class="menu-link" href="">Это интересно</a></li>
+        <li> <a class="menu-link" href="contacts.html">Контакты</a></li>
+    </ul>
+</div>
 <h1>Индивидуальный подбор парфюма</h1>
 <h3 class="test-text">Заполните следующую форму и наш парфюмерный стилист составит перечень тех ароматов, которые подойдут именно Вам.</h3>
 <p class="test-text">Ароматы для каких случаев Вы ищете? (Можно выбрать несколько вариантов)</p>
@@ -179,14 +181,14 @@
     </label>
 </fieldset>
 <br>
-<fieldset class="test">
+<fieldset class="test" class="menu-link">
     <form action="#">
         <input type="imail" placeholder="Email"><br>
         <br>
     </form>
 </fieldset>
-<hr>
-<p>&copy;&quot;Все права защищены&quot;</p>
-<hr>
+<div class="bottom">
+    <p>&copy;&quot;Все права защищены&quot;</p>
+</div>
 </body>
 </html>
