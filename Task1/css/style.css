@@ -74,7 +74,12 @@ input::placeholder {
     font-style: italic;
 }
 .photo {
-    border-color: aquamarine;
+    border-color: indigo;
+    border-style: solid;
+    border-width: 2px;
+}
+.photo:hover {
+    border-color: #edcbff;
     border-style: solid;
     border-width: 2px;
 }
