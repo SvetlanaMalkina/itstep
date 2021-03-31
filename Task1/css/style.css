@@ -15,28 +15,24 @@ body {
     list-style: none;
     font-size: 18px;
 }
-
 .link {
     color: indigo;
 }
 .link:hover{
     color: darkviolet;
 }
-
 .title {
     color: black;
     font-size: 18px;
     font-weight: 400;
     background-color: #d5b7ff;
 }
-
 .briefly {
     color: #707070;
     font-size: 14px;
     font-style: italic;
     line-height: 16px;
 }
-
 .specification {
     color: #484343;
     font-size: 18px;
@@ -45,7 +41,11 @@ body {
     text-align: left;
     font-style: italic;
 }
-
+.specification:first-letter {
+    font-family: "Niagara Engraved", Times, serif;
+    font-size: 24px;
+    color: indigo;
+}
 .pyramid {
     color: #000033;
     font-size: 18px;
@@ -53,7 +53,9 @@ body {
     line-height: 18px;
     font-style: oblique;
 }
-
+.pyramid {
+    list-style-image: url("../images/image1.png");
+}
 .communication input {
     width: 200px;
     height: 30px;
@@ -62,12 +64,10 @@ body {
     font-size: 16px;
     text-transform: capitalize;
 }
-
 .email:focus {
     background: lavender;
     color: darkblue;
 }
-
 input::placeholder {
     color: #707070;
     font-size: 16px;
@@ -83,27 +83,32 @@ input::placeholder {
     border-style: solid;
     border-width: 2px;
 }
-.pyramid {
-    list-style-image: url("../images/image1.png");
-}
 .test {
     width: 200px;
     font-style: normal;
     color: black;
     font-size: 16px;
 }
-.footer {
-    background: #d5b7ff;
-    box-sizing: border-box;
-    padding: 10px;
-}
 table {
     width: 300px;
     border: 2px solid black;
     background: aliceblue;
+    border-collapse: collapse;
 }
 td {
     text-align: center;
     padding: 3px;
     border: 2px solid black;
+}
+.head-table {
+    font-weight: bold;
+    padding: 10px 15px;
+}
+.body-table {
+    color: #484343;
+}
+.footer {
+    background: #d5b7ff;
+    box-sizing: border-box;
+    padding: 10px;
 }
