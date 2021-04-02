@@ -6,18 +6,21 @@
     <title>Test</title>
 </head>
 <body>
-<h3>Меню</h3>
-<ul class="menu">
-    <li> <a href="index.html">Главная</a></li>
-    <li> <a href="catalog.html">Каталог</a></li>
-    <li> <a href="test.html">Подбор аромата</a></li>
-    <li> <a href="">Это интересно</a></li>
-    <li> <a href="contacts.html">Контакты</a></li>
-</ul>
-<hr>
+<div class="header">
+    <img alt="logo" src="images/logo.png">
+    <img alt="logo" src="images/name.jpg">
+    <h3 class="top-title">Меню</h3>
+    <ul class="menu">
+        <li> <a class="link" href="index.html">Главная</a></li>
+        <li> <a class="link" href="catalog.html">Каталог</a></li>
+        <li> <a class="link" href="test.html">Подбор аромата</a></li>
+        <li> <a class="link" href="interesting.html">Это интересно</a></li>
+        <li> <a class="link" href="contacts.html">Контакты</a></li>
+    </ul>
+</div>
 <h1>Индивидуальный подбор парфюма</h1>
-<h3 class="test-text">Заполните следующую форму и наш парфюмерный стилист составит перечень тех ароматов, которые подойдут именно Вам.</h3>
-<p class="test-text">Ароматы для каких случаев Вы ищете? (Можно выбрать несколько вариантов)</p>
+<h3 class="title">Заполните следующую форму и наш парфюмерный стилист составит перечень тех ароматов, которые подойдут именно Вам.</h3>
+<h3 class="title">Ароматы для каких случаев Вы ищете? (Можно выбрать несколько вариантов)</h3>
 <fieldset class="test">
   <legend>Офис/Деловой</legend>
     <input type="checkbox">
@@ -31,7 +34,7 @@
     <input type="checkbox">
 </fieldset>
 <br>
-<p class="test-text">Какие ароматы Вам по-душе? (Можно выбрать несколько вариантов)</p>
+<h3 class="title">Какие ароматы Вам по-душе? (Можно выбрать несколько вариантов)</h3>
 <fieldset class="test">
     <legend>Морские</legend>
     <input type="checkbox">
@@ -45,7 +48,7 @@
     <input type="checkbox">
 </fieldset>
 <br>
-<p class="test-text">Какие ароматы Вам не нравятся? (Можно выбрать несколько вариантов)</p>
+<h3 class="title">Какие ароматы Вам не нравятся? (Можно выбрать несколько вариантов)</h3>
 <fieldset class="test">
     <legend>Морские</legend>
     <input type="checkbox">
@@ -59,7 +62,7 @@
     <input type="checkbox">
 </fieldset>
 <br>
-<p class="test-text">Какие ноты в парфюме Вам нравятся? (Можно выбрать несколько вариантов)</p>
+<h3 class="title">Какие ноты в парфюме Вам нравятся? (Можно выбрать несколько вариантов)</h3>
 <fieldset class="test">
     <legend>Лимон</legend>
     <input type="checkbox">
@@ -113,7 +116,7 @@
     <input type="checkbox">
 </fieldset>
 <br>
-<p class="test-text">Какие ноты в парфюме Вам неприятны? (Можно выбрать несколько вариантов)</p>
+<h3 class="title">Какие ноты в парфюме Вам неприятны? (Можно выбрать несколько вариантов)</h3>
 <fieldset class="test">
     <legend>Лимон</legend>
     <input type="checkbox">
@@ -166,7 +169,7 @@
     <legend>Ладан</legend>
     <input type="checkbox">
 </fieldset>
-<p class="test-text">Ваш пол.</p>
+<h3 class="title">Ваш пол.</h3>
 <fieldset class="test">
     <legend>Пол</legend>
    <label>
@@ -181,12 +184,15 @@
 <br>
 <fieldset class="test">
     <form action="#">
-        <input type="imail" placeholder="Email"><br>
+        <input class="email" type="imail" placeholder="Email"><br>
         <br>
     </form>
 </fieldset>
-<hr>
-<p>&copy;&quot;Все права защищены&quot;</p>
-<hr>
+<fieldset class="test">
+    <input type="submit">
+</fieldset>
+<div class="footer">
+    <p>&copy;&quot;Все права защищены&quot;</p>
+</div>
 </body>
 </html>

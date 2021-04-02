@@ -1,40 +1,51 @@
 body {
-    background-color: #f8f8f8;
+    background-color: #edcbff;
 }
-
+.header {
+    background: #d5b7ff;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.top-title {
+    font-style: italic;
+    font-size: 20px;
+}
 .menu li {
     font-style: italic;
     list-style: none;
     font-size: 18px;
 }
-
-.menu li a {
+.link {
     color: indigo;
 }
-
+.link:hover{
+    color: darkviolet;
+}
 .title {
     color: black;
     font-size: 18px;
     font-weight: 400;
-    background-color: #eaeaea;
+    background-color: #d5b7ff;
 }
-
 .briefly {
     color: #707070;
     font-size: 14px;
     font-style: italic;
     line-height: 16px;
 }
-
 .specification {
     color: #484343;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 20px;
     text-align: left;
-    font-style: oblique;
+    font-style: italic;
 }
-
+.specification:first-letter {
+    font-family: "Niagara Engraved", Times, serif;
+    font-size: 24px;
+    color: indigo;
+}
 .pyramid {
     color: #000033;
     font-size: 18px;
@@ -42,31 +53,62 @@ body {
     line-height: 18px;
     font-style: oblique;
 }
-
+.pyramid {
+    list-style-image: url("../images/image1.png");
+}
 .communication input {
     width: 200px;
     height: 30px;
     font-style: normal;
     color: black;
     font-size: 16px;
+    text-transform: capitalize;
 }
-
+.email:focus {
+    background: lavender;
+    color: darkblue;
+}
 input::placeholder {
     color: #707070;
     font-size: 16px;
     font-style: italic;
 }
 .photo {
-    border-color: aquamarine;
+    border-color: indigo;
     border-style: solid;
     border-width: 2px;
 }
-.pyramid {
-    list-style-image: url("../images/image1.png");
+.photo:hover {
+    border-color: #edcbff;
+    border-style: solid;
+    border-width: 2px;
 }
 .test {
     width: 200px;
     font-style: normal;
     color: black;
     font-size: 16px;
+}
+table {
+    width: 300px;
+    border: 2px solid black;
+    background: aliceblue;
+    border-collapse: collapse;
+}
+td {
+    text-align: center;
+    padding: 3px;
+    border: 2px solid black;
+}
+.head-table {
+    font-weight: bold;
+    padding: 10px 15px;
+}
+.body-table {
+    color: #484343;
+}
+.footer {
+    background: #d5b7ff;
+    box-sizing: border-box;
+    padding: 10px;
 }
