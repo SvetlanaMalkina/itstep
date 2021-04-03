@@ -83,12 +83,6 @@ input::placeholder {
     border-style: solid;
     border-width: 2px;
 }
-.test {
-    width: 200px;
-    font-style: normal;
-    color: black;
-    font-size: 16px;
-}
 table {
     width: 300px;
     border: 2px solid black;
@@ -111,4 +105,13 @@ td {
     background: #d5b7ff;
     box-sizing: border-box;
     padding: 10px;
+}
+.store-name{
+    color: darkviolet;
+    font-size: 98px;
+    font-family: "Brush Script MT";
+    font-style: italic;
+}
+.logo-name{
+    display: block;
 }
