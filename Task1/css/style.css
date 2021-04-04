@@ -39,6 +39,9 @@ body {
     padding: 15px;
 }
 .store-name{
+    background: linear-gradient(45deg, rgb(41, 11, 214), rgb(255, 0, 68));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: #E366B5;
     font-size:72px;
     font-style: italic;
@@ -94,13 +97,13 @@ body {
     font-weight: 400;
     background-color: #d5b7ff;
 }
-.briefly {
+.product-briefly{
     color: #707070;
     font-size: 14px;
     font-style: italic;
     line-height: 16px;
 }
-.specification {
+.product-specification{
     color: #484343;
     font-size: 18px;
     font-weight: 400;
@@ -108,22 +111,22 @@ body {
     text-align: left;
     font-style: italic;
 }
-.specification:first-letter {
+.product-specification:first-letter {
     font-family: "Niagara Engraved", Times, serif;
     font-size: 24px;
     color: indigo;
 }
-.pyramid {
+.product-pyramid {
     color: #000033;
     font-size: 18px;
     font-weight: 400;
     line-height: 18px;
     font-style: oblique;
 }
-.pyramid {
+.product-pyramid{
     list-style-image: url("../images/image1.png");
 }
-.communication input {
+.contacts-communication input {
     width: 200px;
     height: 30px;
     font-style: normal;
@@ -173,7 +176,7 @@ td {
     height: 350px;
     display: flex;
 }
-.products{
+.catalog-products{
     width: 200px;
     border: 1px solid #000;
     display: flex;
@@ -184,5 +187,13 @@ td {
     padding: 10px;
 }
 .catalog {
+    margin: 5px 100px;
+}
+.product-description{
+    border: 1px solid #000;
+    margin: 5px 100px;
+}
+.product{
+    border: 1px solid #000;
     margin: 5px 100px;
 }
