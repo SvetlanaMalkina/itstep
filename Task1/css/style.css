@@ -170,11 +170,9 @@ body{
     color: darkviolet;
 }
 .product{
-    border: 1px solid #000;
-    margin: 5px 100px;
+    margin: 5px 10px;
 }
 .product_top{
-    border: 1px solid #000;
     display: flex;
     justify-content: space-around;
 }
@@ -184,43 +182,40 @@ body{
     color: indigo;
 }
 .product_photo{
-    border-color: indigo;
+    border-color: thistle;
     border-style: solid;
     border-width: 2px;
 }
 .product_photo:hover{
-    border-color: #edcbff;
+    border-color: lavender;
     border-style: solid;
     border-width: 2px;
 }
-.product_buy{
-
-}
-.product_title{
-    color: black;
-    font-size: 18px;
-    font-weight: 400;
-    background-color: #d5b7ff;
-}
 .product-briefly{
-    color: #707070;
-    font-size: 14px;
+    color: indigo;
+    font-size: 18px;
     font-style: italic;
-    line-height: 16px;
+    line-height: 18px;
 }
 .product_button{
-    border: indigo;
+    border: 2px solid #000;
+    background: lavender;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 .product_button:hover{
     cursor: pointer;
 }
 .product_button:active{
     color: darkseagreen;
-    border-color: darkgreen;
 }
 .product-description{
-    border: 1px solid #000;
     margin: 5px 100px;
+    padding: 10px;
+}
+.product_title{
+    background-color: plum;
 }
 .product-pyramid{
     color: #000033;
@@ -262,6 +257,44 @@ td {
     font-family: "Niagara Engraved", Times, serif;
     font-size: 24px;
     color: indigo;
+}
+.contacts{
+    padding: 10px;
+}
+.contacts-communication{
+
+}
+.contacts-communication input {
+    width: 200px;
+    height: 25px;
+    font-style: normal;
+    color: black;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.email_form:focus{
+    background: lavender;
+    color: darkblue;
+}
+input::placeholder {
+    color: #707070;
+    font-size: 16px;
+    font-style: italic;
+}
+.interesting{
+    padding: 20px;
+}
+.title{
+    background-color: plum;
+}
+.interesting_link:hover{
+    color: darkviolet;
+}
+.article{
+    padding: 20px;
+}
+.hystory_fragrance{
+    padding: 20px;
 }
 /*.header {
     height: 230px;
