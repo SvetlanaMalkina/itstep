@@ -1,93 +1,231 @@
-body {
-    background-color: #edcbff;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+html,body{
+    height: 100%;
 }
-.header {
-    background: #d5b7ff;
-    box-sizing: border-box;
+body{
+    background-image: url("../images/bg.png");
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1200px;
+    border: 1px solid darkviolet;
+    background-color: lavender;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-image: url("../images/header.jpg");
+    height: 150px;
+    box-shadow: 0 0 15px 2px rebeccapurple;
+}
+.logo_box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 400px;
+}
+.logo_img{
+    display: block;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90px;
+    height: 130px;
+}
+.logo-name{
+    width: 260px;
+    font-family: 'Lobster', cursive;
+    background: linear-gradient(45deg, rgb(41, 11, 214), rgb(255, 0, 68));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #E366B5;
+    font-size: 48px;
+}
+.navigate_box{
+    display: flex;
     padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 700px;
+    height: 100%;
 }
-.top-title {
-    font-style: italic;
-    font-size: 20px;
+.search_box{
+    display: flex;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    width: 200px;
+    height: 25px;
+    position: relative;
 }
-.menu li {
+.text_search{
+    padding: 0 30px 0 5px;
+    width: 100%;
+    height: 100%;
+    border-color: black;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.text_search:focus{
+    background: lavender;
+}
+.btn_search{
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    border: 2px solid #000;
+    background: lavender url("../images/search.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.btn_search:hover{
+    cursor: pointer;
+}
+.menu {
+    width: 600px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu_item{
+    width: 120px;
+    list-style-type: none;
+}
+.menu_item {
+    color: indigo;
+}
+.menu_link{
+    height: 30px;
+    border: 1px solid #000;
+    background-color: #E366B5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-style: italic;
     list-style: none;
     font-size: 18px;
 }
-.link {
-    color: indigo;
-}
-.link:hover{
+.menu_link:hover{
     color: darkviolet;
 }
-.title {
-    color: black;
+.main{
+    padding: 10px;
+}
+.main_text{
+    color: indigo;
+    font-size: 28px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+.footer{
+    height: 50px;
+    font-weight: bold;
+    background: plum;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    box-shadow: 0 0 15px 2px rebeccapurple;
+}
+.catalog{
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 100px;
+}
+.catalog-products{
+    width: 200px;
+    border: 1px solid violet;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+.catalog-products:hover{
+    border-color: darkviolet;
+}
+.catalog_link{
+    color: indigo;
     font-size: 18px;
-    font-weight: 400;
-    background-color: #d5b7ff;
 }
-.briefly {
-    color: #707070;
-    font-size: 14px;
-    font-style: italic;
-    line-height: 16px;
+.catalog_link:hover{
+    color: darkviolet;
 }
-.specification {
-    color: #484343;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 20px;
-    text-align: left;
-    font-style: italic;
+.product{
+    margin: 5px 10px;
 }
-.specification:first-letter {
-    font-family: "Niagara Engraved", Times, serif;
-    font-size: 24px;
+.product_top{
+    display: flex;
+    justify-content: space-around;
+}
+.product_name{
+    display: flex;
+    justify-content: center;
     color: indigo;
 }
-.pyramid {
+.product_photo{
+    border-color: thistle;
+    border-style: solid;
+    border-width: 2px;
+}
+.product_photo:hover{
+    border-color: lavender;
+    border-style: solid;
+    border-width: 2px;
+}
+.product-briefly{
+    color: indigo;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 18px;
+}
+.product_button{
+    border: 2px solid #000;
+    background: lavender;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.product_button:hover{
+    cursor: pointer;
+}
+.product_button:active{
+    color: darkseagreen;
+}
+.product-description{
+    margin: 5px 100px;
+    padding: 10px;
+}
+.product_title{
+    background-color: plum;
+}
+.product-pyramid{
     color: #000033;
     font-size: 18px;
     font-weight: 400;
     line-height: 18px;
     font-style: oblique;
 }
-.pyramid {
+.product-pyramid{
     list-style-image: url("../images/image1.png");
-}
-.communication input {
-    width: 200px;
-    height: 30px;
-    font-style: normal;
-    color: black;
-    font-size: 16px;
-    text-transform: capitalize;
-}
-.email:focus {
-    background: lavender;
-    color: darkblue;
-}
-input::placeholder {
-    color: #707070;
-    font-size: 16px;
-    font-style: italic;
-}
-.photo {
-    border-color: indigo;
-    border-style: solid;
-    border-width: 2px;
-}
-.photo:hover {
-    border-color: #edcbff;
-    border-style: solid;
-    border-width: 2px;
-}
-.test {
-    width: 200px;
-    font-style: normal;
-    color: black;
-    font-size: 16px;
 }
 table {
     width: 300px;
@@ -100,15 +238,61 @@ td {
     padding: 3px;
     border: 2px solid black;
 }
-.head-table {
+.head-table{
     font-weight: bold;
     padding: 10px 15px;
 }
-.body-table {
+.body-table{
     color: #484343;
 }
-.footer {
-    background: #d5b7ff;
-    box-sizing: border-box;
+.product-specification{
+    color: #484343;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    font-style: italic;
+}
+.product-specification:first-letter {
+    font-family: "Niagara Engraved", Times, serif;
+    font-size: 24px;
+    color: indigo;
+}
+.contacts{
     padding: 10px;
+}
+.contacts-communication{
+
+}
+.contacts-communication input {
+    width: 200px;
+    height: 25px;
+    font-style: normal;
+    color: black;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.email_form:focus{
+    background: lavender;
+    color: darkblue;
+}
+input::placeholder {
+    color: #707070;
+    font-size: 16px;
+    font-style: italic;
+}
+.interesting{
+    padding: 20px;
+}
+.title{
+    background-color: plum;
+}
+.interesting_link:hover{
+    color: darkviolet;
+}
+.article{
+    padding: 20px;
+}
+.hystory_fragrance{
+    padding: 20px;
 }

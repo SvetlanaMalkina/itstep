@@ -1,79 +1,90 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="UTF-8">
     <title>Index</title>
 </head>
 <body>
-<div class="header">
-    <img alt="logo" src="images/logo.png">
-    <img alt="logo" src="images/name.jpg">
-    <h3 class="top-title">Меню</h3>
-    <ul class="menu">
-        <li><a class="link" href="index.html">Главная</a></li>
-        <li><a class="link" href="catalog.html">Каталог</a></li>
-        <li><a class="link" href="test.html">Подбор аромата</a></li>
-        <li><a class="link" href="interesting.html">Это интересно</a></li>
-        <li><a class="link" href="contacts.html">Контакты</a></li>
-    </ul>
-</div>
-<h1>Интересные статьи и факты о парфюмерии</h1>
-<h2>Факты о парфюмерии</h2>
-<img alt="fact"
-     src="https://sun9-24.userapi.com/impf/1TNegnkcjvhPYJ3O1j6VV-092CiUN6w8FPN8uA/OsLt5hkfels.jpg?size=600x600&quality=96&sign=8f1f741910cc387c8c955d3a7cecebf8&type=album"
-     width="500">
-<h2>Полезная информация и статьи о парфюмерии</h2>
-<table>
-    <tr>
-        <td class="head-table" rowspan="2">Стойкость на коже</td>
-        <td class="head-table" colspan="3">Наименование и концентрация</td>
-    </tr>
-    <tr>
-        <td class="head-table">Вид</td>
-        <td class="head-table">Маркировка</td>
-        <td class="head-table">Кол-во душистых веществ</td>
-    </tr>
-    <tr>
-        <td class="body-table" rowspan="2">до 2 часов</td>
-        <td class="body-table">Освежающая вода</td>
-        <td class="body-table">l'eau fraiche, eau de sport</td>
-        <td class="body-table">1-3%</td>
-    </tr>
-    <tr>
-        <td class="body-table">Одеколон</td>
-        <td class="body-table">eau de cologne</td>
-        <td class="body-table">3-5%</td>
-    </tr>
-    <tr>
-        <td class="body-table">до 4 часов</td>
-        <td class="body-table">Туалетная вода</td>
-        <td class="body-table">eau de toilette</td>
-        <td class="body-table" class="body-table">6-12%</td>
-    </tr>
-    <tr>
-        <td class="body-table">до 8 часов</td>
-        <td class="body-table">Парфюмированная вода</td>
-        <td class="body-table">eau de parfum, parfum de toilette</td>
-        <td class="body-table">15-20%</td>
-    </tr>
-    <tr>
-        <td class="body-table">более 8 часов</td>
-        <td class="body-table">Духи</td>
-        <td class="body-table">parfum, extrait</td>
-        <td class="body-table">20-30%</td>
-    </tr>
-</table>
-<br>
-<a class="link" href="article.html">10 МИФОВ О ПАРФЮМЕ, КОТОРЫЕ НУЖНО РАЗВЕНЧАТЬ.</a>
-<h2>История аромата</h2>
-<a class="link" href="history_of_the_fragrance.html">ИСТОРИЯ МОЕГО ЛЮБИМОГО АРОМАТА. Dolce Gabbana Light Blue</a>
-<h2>Немного юмора о парфюме</h2>
-<img alt="humor"
-     src="https://sun9-59.userapi.com/impf/c824409/v824409491/a5fd2/y3JfMZZtoSE.jpg?size=1200x830&quality=96&sign=d5e314f48cb43451e021547a305b541c&type=album"
-     width="500">
-<div class="footer">
-    <p>&copy;&quot;Все права защищены&quot;</p>
+<div class="container">
+    <div class="header">
+        <div class="logo_box">
+            <a class="logo_img" href="index.html"></a>
+            <p class="logo-name">АРОМАГИЯ</p>
+        </div>
+        <div class="navigate_box">
+            <div class="search_box">
+                <input class="text_search" type="text">
+                <button class="btn_search"></button>
+            </div>
+            <ul class="menu">
+                <li class="menu_item"><a class="menu_link" href="index.html">Главная</a></li>
+                <li class="menu_item"><a class="menu_link" href="catalog.html">Каталог</a></li>
+                <li class="menu_item"><a class="menu_link" href="interesting.html">Интересно</a></li>
+                <li class="menu_item"><a class="menu_link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="interesting">
+    <h1> Интересные статьи и факты о парфюмерии</h1>
+    <h2 class="title">Факты о парфюмерии</h2>
+    <img alt="fact"
+         src="https://sun9-24.userapi.com/impf/1TNegnkcjvhPYJ3O1j6VV-092CiUN6w8FPN8uA/OsLt5hkfels.jpg?size=600x600&quality=96&sign=8f1f741910cc387c8c955d3a7cecebf8&type=album"
+         width="500">
+    <h2 class="title">Полезная информация и статьи о парфюмерии</h2>
+    <table>
+        <tr>
+            <td class="head-table" rowspan="2">Стойкость на коже</td>
+            <td class="head-table" colspan="3">Наименование и концентрация</td>
+        </tr>
+        <tr>
+            <td class="head-table">Вид</td>
+            <td class="head-table">Маркировка</td>
+            <td class="head-table">Кол-во душистых веществ</td>
+        </tr>
+        <tr>
+            <td class="body-table" rowspan="2">до 2 часов</td>
+            <td class="body-table">Освежающая вода</td>
+            <td class="body-table">l'eau fraiche, eau de sport</td>
+            <td class="body-table">1-3%</td>
+        </tr>
+        <tr>
+            <td class="body-table">Одеколон</td>
+            <td class="body-table">eau de cologne</td>
+            <td class="body-table">3-5%</td>
+        </tr>
+        <tr>
+            <td class="body-table">до 4 часов</td>
+            <td class="body-table">Туалетная вода</td>
+            <td class="body-table">eau de toilette</td>
+            <td class="body-table" class="body-table">6-12%</td>
+        </tr>
+        <tr>
+            <td class="body-table">до 8 часов</td>
+            <td class="body-table">Парфюмированная вода</td>
+            <td class="body-table">eau de parfum, parfum de toilette</td>
+            <td class="body-table">15-20%</td>
+        </tr>
+        <tr>
+            <td class="body-table">более 8 часов</td>
+            <td class="body-table">Духи</td>
+            <td class="body-table">parfum, extrait</td>
+            <td class="body-table">20-30%</td>
+        </tr>
+    </table>
+    <br>
+    <a class="interesting_link" href="article.html">10 МИФОВ О ПАРФЮМЕ, КОТОРЫЕ НУЖНО РАЗВЕНЧАТЬ.</a>
+    <h2 class="title">История аромата</h2>
+    <a class="interesting_link" href="history_of_the_fragrance.html">ИСТОРИЯ МОЕГО ЛЮБИМОГО АРОМАТА. Dolce Gabbana Light Blue</a>
+    <h2 class="title">Немного юмора о парфюме</h2>
+    <img alt="humor"
+         src="https://sun9-59.userapi.com/impf/c824409/v824409491/a5fd2/y3JfMZZtoSE.jpg?size=1200x830&quality=96&sign=d5e314f48cb43451e021547a305b541c&type=album"
+         width="500">
+    </div>
+    <div class="footer">
+        <p>&copy;&quot;Все права защищены&quot;</p>
+    </div>
 </div>
 </body>
 </html>

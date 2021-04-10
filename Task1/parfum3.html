@@ -1,60 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="UTF-8">
     <title>Parfum3</title>
 </head>
 <body>
-<div class="header">
-    <img alt="logo" src="images/logo.png">
-    <img alt="logo" src="images/name.jpg">
-    <h3 class="top-title">Меню</h3>
-    <ul class="menu">
-        <li> <a class="link" href="index.html">Главная</a></li>
-        <li> <a class="link" href="catalog.html">Каталог</a></li>
-        <li> <a class="link" href="test.html">Подбор аромата</a></li>
-        <li> <a class="link" href="interesting.html">Это интересно</a></li>
-        <li> <a class="link" href="contacts.html">Контакты</a></li>
-    </ul>
-</div>
-<h1>
-    <strong>DOLCE & GABBANA - LIGHT BLUE</strong>
-</h1>
-<a href="http://scentseduction.com/wp-content/uploads/2017/05/69036.jpg" target="_blank">
-<img class="photo" alt="DOLCE & GABBANA-LIGHT BLUE" src="http://scentseduction.com/wp-content/uploads/2017/05/69036.jpg">
-</a>
-<h2 class="title">Описание товара</h2>
-<p class="briefly">
-    <strong>Женская парфюмерная вода</strong>
-    <br>
-25 мл<br>
-50 мл<br>
-    100 мл</p>
-<h2 class="title">Пирамида</h2>
-<table class="pyramid">
-    <tr>
-        <td class="head-table">Верхние ноты</td>
-        <td class="head-table">Ноты сердца</td>
-        <td class="head-table">Ноты базы</td>
-    </tr>
-    <tr>
-        <td class="body-table">зеленое яблоко, белый кедр, колокольчик и сицилийский лимон</td>
-        <td class="body-table">белая роза, бамбук и жасмин</td>
-        <td class="body-table">амбра, мускус и белый кедр</td>
-    </tr>
-</table>
-<h2 class="title">Характеристика</h2>
-<p class="specification"> Аромат ярок и богат, красив и неотразим, полон чувств и эмоций, как и сама жизнь.</p>
-<p class="specification">Легкое и свежее звучание парфюма говорит о юности и любви к жизни.</p>
-    <p class="specification">Со временем он раскрывается чарующими и необычными нотами,
-    которые захватывают вас в водоворот самых ярких и приятных эмоций,
-    создавая особое настроение внутри и вокруг вас, добавляя блеск вашим глазам,
-        который не померкнет весь день.</p>
-<p class="specification">Легкий, свежий, мерцающий и ласкающий чувства аромат,
-    созданный для молодой и очаровательной особы.</p>
-<div class="footer">
-    <p>&copy;&quot;Все права защищены&quot;</p>
+<div class="container">
+    <div class="header">
+        <div class="logo_box">
+            <a class="logo_img" href="index.html"></a>
+            <p class="logo-name">АРОМАГИЯ</p>
+        </div>
+        <div class="navigate_box">
+            <div class="search_box">
+                <input class="text_search" type="text">
+                <button class="btn_search"></button>
+            </div>
+            <ul class="menu">
+                <li class="menu_item"><a class="menu_link" href="index.html">Главная</a></li>
+                <li class="menu_item"><a class="menu_link" href="catalog.html">Каталог</a></li>
+                <li class="menu_item"><a class="menu_link" href="interesting.html">Интересно</a></li>
+                <li class="menu_item"><a class="menu_link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="product">
+        <h1>
+            <strong class="product_name">DOLCE & GABBANA - LIGHT BLUE</strong>
+        </h1>
+        <div class="product_top">
+            <a href="http://scentseduction.com/wp-content/uploads/2017/05/69036.jpg" target="_blank">
+                <img class="product_photo" alt="DOLCE & GABBANA-LIGHT BLUE"
+                     src="http://scentseduction.com/wp-content/uploads/2017/05/69036.jpg" width="600">
+            </a>
+            <div class="product_buy">
+                <p class="product-briefly">
+                    <strong>Женская парфюмерная вода</strong>
+                    <br>
+                    25 мл<br>
+                    50 мл<br>
+                    100 мл</p>
+                <form>
+                    <p><input class="product_button" type="button" value="Купить"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="product-description">
+        <h2 class="product_title">Пирамида</h2>
+        <table class="product-pyramid">
+            <tr>
+                <td class="head-table">Верхние ноты</td>
+                <td class="head-table">Ноты сердца</td>
+                <td class="head-table">Ноты базы</td>
+            </tr>
+            <tr>
+                <td class="body-table">зеленое яблоко, белый кедр, колокольчик и сицилийский лимон</td>
+                <td class="body-table">белая роза, бамбук и жасмин</td>
+                <td class="body-table">амбра, мускус и белый кедр</td>
+            </tr>
+        </table>
+        <h2 class="product_title">Характеристика</h2>
+        <p class="product-specification"> Аромат ярок и богат, красив и неотразим, полон чувств и эмоций, как и сама
+            жизнь.</p>
+        <p class="product-specification">Легкое и свежее звучание парфюма говорит о юности и любви к жизни.</p>
+        <p class="product-specification">Со временем он раскрывается чарующими и необычными нотами,
+            которые захватывают вас в водоворот самых ярких и приятных эмоций,
+            создавая особое настроение внутри и вокруг вас, добавляя блеск вашим глазам,
+            который не померкнет весь день.</p>
+        <p class="product-specification">Легкий, свежий, мерцающий и ласкающий чувства аромат,
+            созданный для молодой и очаровательной особы.</p>
+    </div>
+    <div class="footer">
+        <p>&copy;&quot;Все права защищены&quot;</p>
+    </div>
 </div>
 </body>
 </html>
