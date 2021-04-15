@@ -5,6 +5,7 @@ html,body{
     padding: 0;
 }
 .container_home{
+    border: 1px solid black;
     width: 1366px;
     min-height: 100%;
     display: flex;
@@ -132,6 +133,10 @@ html,body{
     border-radius: 22.5px;
     border: none;
 }
+.b1_button:hover{
+    cursor: pointer;
+    font-size: 20px;
+}
 .scrolL{
     width: 120px;
     height: 40px;
@@ -222,6 +227,10 @@ outline:none;
     background-color: #ffffff;
     border: none;
 }
+.b2_transition_button:hover{
+    cursor: pointer;
+    font-weight: 900;
+}
 .b2_products{
     padding: 20px 95px;
     display: flex;
@@ -248,12 +257,12 @@ outline:none;
     height: 100%;
     position: absolute;
     pointer-events: none;
-    background-color: rgba(255 255 255 0);
+    background-color: rgba(255, 255, 255, 0);
     z-index: 1;
     transition: background-color 1s;
 }
 .card-1:hover .lining-1{
-    background-color: rgba(255 255 255 .7);
+    background-color: rgba(255, 255, 255, .7);
 }
 .sub_card-1{
     width: 100%;
@@ -326,12 +335,12 @@ outline:none;
     height: 100%;
     position: absolute;
     pointer-events: none;
-    background-color: rgba(255 255 255 0);
+    background-color: rgba(255, 255, 255, 0);
     z-index: 1;
     transition: background-color 1s;
 }
 .card-2:hover .lining-2{
-    background-color: rgba(255 255 255 .7);
+    background-color: rgba(255, 255, 255, .7);
 }
 .sub_card-2{
     width: 100%;
@@ -404,12 +413,12 @@ outline:none;
     height: 100%;
     position: absolute;
     pointer-events: none;
-    background-color: rgba(255 255 255 0);
+    background-color: rgba(255, 255, 255, 0);
     z-index: 1;
     transition: background-color 1s;
 }
 .card-3:hover .lining-3{
-    background-color: rgba(255 255 255 .7);
+    background-color: rgba(255, 255, 255, .7);
 }
 .sub_card-3{
     width: 100%;
@@ -482,12 +491,12 @@ outline:none;
     height: 100%;
     position: absolute;
     pointer-events: none;
-    background-color: rgba(255 255 255 0);
+    background-color: rgba(255, 255, 255, 0);
     z-index: 1;
     transition: background-color 1s;
 }
 .card-4:hover .lining-4{
-    background-color: rgba(255 255 255 .7);
+    background-color: rgba(255, 255, 255, .7);
 }
 .sub_card-4{
     width: 100%;
@@ -596,6 +605,9 @@ outline:none;
     width: 430px;
     padding: 0 52px;
 }
+
+/*Четвёртый блок*/
+
 .ch_blok_4{
     width: 100%;
     min-height: 100%;
@@ -609,7 +621,7 @@ outline:none;
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    margin: 120px 87px 10px 50px;
+    margin: 120px 87px 10px 98px;
 }
 .b4_name{
     font-family: 'Montserrat', sans-serif;
@@ -629,41 +641,150 @@ outline:none;
     background-color: #ffffff;
     border: none;
 }
+.b4_transition_button:hover{
+    cursor: pointer;
+    font-weight: 900;
+}
 .b4_products{
-    width: 100%;
-    display: flex;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    margin: 30px 98px;
 }
 .b4_product-1{
+    border: 1px solid white;
     width: 370px;
     height: 370px;
     background-image: url("../images2/product_11_117.png");
+    margin: 15px 0;
+}
+.b4_product-1:hover{
+    border: 1px solid deepskyblue;
 }
 .b4_product-2{
+    border: 1px solid white;
     width: 370px;
     height: 370px;
     background-image: url("../images2/product_21_115.png");
+    margin: 15px 0;
+}
+.b4_product-2:hover{
+    border: 1px solid deepskyblue;
 }
 .b4_product-3{
+    border: 1px solid white;
     width: 370px;
     height: 370px;
     background-image: url("../images2/product_31_113.png");
+    margin: 15px 0;
+}
+.b4_product-3:hover{
+    border: 1px solid deepskyblue;
 }
 .b4_product-4{
+    border: 1px solid white;
     width: 370px;
     height: 370px;
     background-image: url("../images2/product_41_111.png");
+    margin: 15px 0;
+}
+.b4_product-4:hover{
+    border: 1px solid deepskyblue;
 }
 .b4_product-5{
+    border: 1px solid white;
     width: 370px;
     height: 370px;
     background-image: url("../images2/product_5_109.png");
+    margin: 15px 0;
+}
+.b4_product-5:hover{
+    border: 1px solid deepskyblue;
 }
 .b4_product-6{
+    border: 1px solid white;
     width: 370px;
     height: 370px;
     background-image: url("../images2/product_6_107.png");
+    margin: 15px 0;
+}
+.b4_product-6:hover{
+    border: 1px solid deepskyblue;
+}
+
+/*Пятый блок*/
+
+.ch_blok_5{
+    width: 100%;
+    height: 800px;
+    background-image: url(../images2/slider_84.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 98px;
+    box-sizing: border-box;
+}
+.b5_order{
+    width: 1110px;
+    display: flex;
+    flex-direction: column;
+    margin: 200px 0;
+}
+.b5_text-1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #e53935;
+    margin: 0;
+}
+.b5_text-2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62px;
+    line-height: 72px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #212121;
+    margin: 0;
+    letter-spacing: -3px;
+}
+.b5_text-3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #6c6c6c;
+    width: 467px;
+    margin: 0;
+}
+.b5_button{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #212121;
+    width: 212px;
+    height: 45px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(33,33,33,0.34);
+    border-radius: 22.5px;
+    border: none;
+}
+.b5_button:hover{
+    cursor: pointer;
+    font-size: 20px;
+}
+#b5_scrolL_link{
+    width: 40px;
+    height: 40px;
+    background-color: #212121;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
 }
