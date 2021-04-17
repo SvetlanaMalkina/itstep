@@ -5,7 +5,6 @@ html,body{
     padding: 0;
 }
 .container_home{
-    border: 1px solid black;
     width: 1366px;
     min-height: 100%;
     display: flex;
@@ -576,7 +575,7 @@ li.menu_item{
 .b6_blok-1:hover{
     border: 1px solid deepskyblue;
 }
-.promo_img2{
+.promo_img3{
     background-image: url("../images2/product_1_lg_66.png");
     width: 570px;
     height: 570px;
@@ -682,4 +681,177 @@ li.menu_item{
 }
 .b7_img{
     cursor: pointer;
+}
+
+/*Восьмой блок*/
+
+.ch_blok_8{
+    width: 1180px;
+    min-height: 384px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.b8_box-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 0;
+}
+.b8_box-1_blok-1{
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+}
+.b8_b1_b1_text-1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #6c6c6c;
+    margin: 0;
+}
+.b8_b1_b1_text-2-3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #212121;
+}
+.b8_box-1_blok-2{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+.b8_b1_b2_text-1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #6c6c6c;
+    margin: 0;
+}
+.b8_b1_b2_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.b8_b1_b2_text-2{
+    font-family: 'Montserrat', sans-serif;
+    width: 140px;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #212121;
+}
+.b8_b1_b2_text-3{
+    width: 195px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #212121;
+}
+.b8_box-1_blok-3{
+    width: 395px;
+    display: flex;
+    flex-direction: column;
+}
+.b8_b1_b3_text-1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #6c6c6c;
+    margin: 0;
+}
+.b8_b1_b3_text-2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #212121;
+}
+.b8_email {
+    display: flex;
+    align-items: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    width: 370px;
+    height: 25px;
+    position: relative;
+    margin: 15px 0;
+}
+.email_form{
+    padding: 0 30px 0 20px;
+    width: 370px;
+    height: 48px;
+    border: 1px solid #d9dee1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+.email_form:focus{
+    background: lightgray;
+}
+.btn_form {
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    z-index: 1;
+    background-image: url("../images2/__19.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.btn_form:active{
+    border: 1px solid dimgrey;
+}
+.b8_box-2{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.b8_b2_text-1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6c6c6c;
+    margin: 0;
+}
+.b8_social_links{
+    cursor: pointer;
+}
+.b8_b2_text-1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6c6c6c;
+    margin: 0;
 }
