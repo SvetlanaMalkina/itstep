@@ -844,8 +844,20 @@ li.menu_item{
     color: #6c6c6c;
     margin: 0;
 }
-.b8_social_links{
+.social-network{
+    width: 200px;
+}
+.btn_social{
+    width: 32px;
+    height: 32px;
+    border: none;
+    outline: none;
     cursor: pointer;
+    font-size: 30px;
+    color: #6c6c6c;
+}
+.btn_social:active{
+    color: black;
 }
 .b8_b2_text-1{
     font-family: 'Montserrat', sans-serif;
