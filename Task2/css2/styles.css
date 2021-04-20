@@ -5,7 +5,7 @@ html,body{
     padding: 0;
 }
 .container_home{
-    width: 1366px;
+    max-width: 1366px;
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -15,8 +15,8 @@ html,body{
 /*Первый блок*/
 
 .ch_blok_1{
-    width: 100%;
-    height: 800px;
+    max-width: 100%;
+    min-height: 800px;
     background-image: url(../images2/slider_img_201.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -27,8 +27,8 @@ html,body{
     box-sizing: border-box;
 }
 .header{
-    width: 1110px;
-    height: 40px;
+    max-width: 1110px;
+    min-height: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,8 +39,8 @@ html,body{
     background-image: url("../images2/logo_228.png");
 }
 .b1_navigation{
-    width: 550px;
-    height: 32px;
+    max-width: 550px;
+    min-height: 32px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -91,13 +91,13 @@ li.menu_item{
     background-image: url("../images2/search_224.png");
 }
 .b1_order{
-    width: 1110px;
+    max-width: 1110px;
     display: flex;
     flex-direction: column;
 }
 .b1_text-1{
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: calc(10px + (18 - 10) * ((100vw - 320px) / (1366 - 320)));
     line-height: 24px;
     font-weight: 700;
     text-transform: uppercase;
@@ -107,7 +107,7 @@ li.menu_item{
 }
 .b1_text-2{
     font-family: 'Montserrat', sans-serif;
-    font-size: 62px;
+    font-size: calc(32px + (62 - 32) * ((100vw - 320px) / (1366 - 320)));
     line-height: 72px;
     font-weight: 100;
     text-transform: uppercase;
@@ -117,11 +117,11 @@ li.menu_item{
 }
 .b1_text-3{
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1366 - 320)));
     line-height: 24px;
     font-weight: 400;
     color: #6c6c6c;
-    width: 467px;
+    max-width: 467px;
     margin: 0;
 }
 .b1_button{
@@ -182,7 +182,7 @@ li.menu_item{
     margin: 0 0 120px 0;
 }
 .b2_navigation{
-    height: 50px;
+    min-height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -190,14 +190,14 @@ li.menu_item{
     margin: 120px 87px 10px 50px;
 }
 .b2_transition{
+    max-width: 400px;
     display: flex;
     justify-content: space-between;
-    width: 400px;
 }
 .b2_transition_item{
+    max-width: 185px;
     list-style-type: none;
     height: auto;
-    width: 185px;
 }
 .b2_transition_link{
     display: inline-block;
@@ -223,7 +223,7 @@ li.menu_item{
 }
 .b2_transition_link:hover:after,
 .b2_transition_link:focus:after {
-    width: 100%;
+    max-width: 100%;
 }
 .b2_transition_button{
     font-family: 'Montserrat', sans-serif;
@@ -246,6 +246,7 @@ li.menu_item{
     padding: 20px 95px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .card{
     background-repeat: no-repeat;
@@ -340,14 +341,15 @@ li.menu_item{
 /*Третий блок*/
 
 .ch_blok_3{
-    width: 100%;
-    height: 683px;
+    max-width: 100%;
+    min-height: 683px;
     display: flex;
+    flex-wrap: wrap;
 }
 .promo_img1{
     background-image: url("../images2/promo_img1_148.png");
-    width: 683px;
-    height: 683px;
+    width: 650px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -383,8 +385,8 @@ li.menu_item{
 }
 .promo_img2{
     background-image: url("../images2/promo_img_132.png");
-    width: 683px;
-    height: 683px;
+    width: 650px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -506,8 +508,8 @@ li.menu_item{
 /*Пятый блок*/
 
 .ch_blok_5{
-    width: 100%;
-    height: 800px;
+    max-width: 100%;
+    min-height: 800px;
     background-image: url(../images2/slider_84.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -518,14 +520,15 @@ li.menu_item{
     box-sizing: border-box;
 }
 .b5_order{
-    width: 1110px;
+    max-width: 1110px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     margin: 200px 0;
 }
 .b5_text-1{
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: calc(10px + (18 - 10) * ((100vw - 320px) / (1366 - 320)));
     line-height: 24px;
     font-weight: 700;
     text-transform: uppercase;
@@ -535,7 +538,7 @@ li.menu_item{
 }
 .b5_text-2{
     font-family: 'Montserrat', sans-serif;
-    font-size: 62px;
+    font-size: calc(32px + (62 - 32) * ((100vw - 320px) / (1366 - 320)));
     line-height: 72px;
     font-weight: 100;
     text-transform: uppercase;
@@ -545,11 +548,11 @@ li.menu_item{
 }
 .b5_text-3{
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1366 - 320)));
     line-height: 24px;
     font-weight: 400;
     color: #6c6c6c;
-    width: 467px;
+    max-width: 467px;
     margin: 0;
 }
 
@@ -562,6 +565,7 @@ li.menu_item{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .b6_blok-1{
     border: 1px solid white;
@@ -630,13 +634,16 @@ li.menu_item{
 /*Седьмой блок*/
 
 .ch_blok_7{
-    width: 1366px;
-    height: 516px;
+    max-width: 1366px;
+    min-height: 516px;
     background-image: url("../images2/back_img_44.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    box-sizing: border-box;
 }
 .b7_container{
     display: flex;
@@ -686,7 +693,7 @@ li.menu_item{
 /*Восьмой блок*/
 
 .ch_blok_8{
-    width: 1180px;
+    max-width: 1180px;
     min-height: 384px;
     display: flex;
     flex-direction: column;
@@ -697,6 +704,7 @@ li.menu_item{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 90px 0;
 }
 .b8_box-1_blok-1{
@@ -815,10 +823,6 @@ li.menu_item{
     height: 24px;
     position: absolute;
     z-index: 1;
-    /*background-image: url("../images2/__19.png");*/
-    /*background-repeat: no-repeat;*/
-    /*-webkit-background-size: cover;*/
-    /*background-size: cover;*/
     font-size: 16px;
     color: grey;
     border: none;
@@ -869,3 +873,4 @@ li.menu_item{
     color: #6c6c6c;
     margin: 0;
 }
+
