@@ -5,6 +5,7 @@ html,body{
     padding: 0;
 }
 .container_home{
+    border: 1px solid black;
     max-width: 1366px;
     min-height: 100%;
     display: flex;
@@ -15,7 +16,7 @@ html,body{
 /*Первый блок*/
 
 .ch_blok_1{
-    max-width: 100%;
+    width: 100%;
     min-height: 800px;
     background-image: url(../images2/slider_img_201.png);
     background-repeat: no-repeat;
@@ -693,19 +694,18 @@ li.menu_item{
 /*Восьмой блок*/
 
 .ch_blok_8{
-    max-width: 1180px;
+    max-width: 100%;
     min-height: 384px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 auto;
+    padding: calc(10px + (90 - 10) * ((100vw - 320px) / (1366 - 320)));
 }
 .b8_box-1{
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 90px 0;
 }
 .b8_box-1_blok-1{
     width: 230px;
@@ -873,4 +873,9 @@ li.menu_item{
     color: #6c6c6c;
     margin: 0;
 }
-
+@media screen and (max-width: 910px) {
+    .ch_blok_1{
+        padding: 10px;
+    }
+   
+}
