@@ -928,6 +928,7 @@ li.menu_item{
     cursor: pointer;
     font-size: 30px;
     color: #6c6c6c;
+    background-color: white;
 }
 .btn_social:active{
     color: black;
