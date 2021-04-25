@@ -38,6 +38,9 @@ html,body{
     width: 185px;
     height: 22px;
     background-image: url("../images2/logo_228.png");
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .b1_navigation{
     max-width: 550px;
@@ -98,7 +101,7 @@ li.menu_item{
 }
 .b1_text-1{
     font-family: 'Montserrat', sans-serif;
-    font-size: calc(10px + (18 - 10) * ((100vw - 320px) / (1366 - 320)));
+    font-size: 18px;
     line-height: 24px;
     font-weight: 700;
     text-transform: uppercase;
@@ -108,7 +111,7 @@ li.menu_item{
 }
 .b1_text-2{
     font-family: 'Montserrat', sans-serif;
-    font-size: calc(32px + (62 - 32) * ((100vw - 320px) / (1366 - 320)));
+    font-size: 62px;
     line-height: 72px;
     font-weight: 100;
     text-transform: uppercase;
@@ -118,8 +121,7 @@ li.menu_item{
 }
 .b1_text-3{
     font-family: 'Montserrat', sans-serif;
-    font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1366 - 320)));
-    line-height: 24px;
+    font-size: 14px;
     font-weight: 400;
     color: #6c6c6c;
     max-width: 467px;
@@ -141,6 +143,7 @@ li.menu_item{
     outline: none;
     position: relative;
     cursor: pointer;
+    margin: 32px 0;
 }
 .b1_button:active{
     top: 1px;
@@ -191,12 +194,12 @@ li.menu_item{
     margin: 120px 87px 10px 50px;
 }
 .b2_transition{
-    max-width: 400px;
+    width: 400px;
     display: flex;
     justify-content: space-between;
 }
 .b2_transition_item{
-    max-width: 185px;
+    width: 185px;
     list-style-type: none;
     height: auto;
 }
@@ -529,7 +532,7 @@ li.menu_item{
 }
 .b5_text-1{
     font-family: 'Montserrat', sans-serif;
-    font-size: calc(10px + (18 - 10) * ((100vw - 320px) / (1366 - 320)));
+    font-size: 18px;
     line-height: 24px;
     font-weight: 700;
     text-transform: uppercase;
@@ -539,7 +542,7 @@ li.menu_item{
 }
 .b5_text-2{
     font-family: 'Montserrat', sans-serif;
-    font-size: calc(32px + (62 - 32) * ((100vw - 320px) / (1366 - 320)));
+    font-size: 62px;
     line-height: 72px;
     font-weight: 100;
     text-transform: uppercase;
@@ -549,8 +552,7 @@ li.menu_item{
 }
 .b5_text-3{
     font-family: 'Montserrat', sans-serif;
-    font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1366 - 320)));
-    line-height: 24px;
+    font-size: 14px;
     font-weight: 400;
     color: #6c6c6c;
     max-width: 467px;
