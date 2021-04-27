@@ -37,7 +37,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Task2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet.css" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -61,6 +61,7 @@
       <workItem from="1617992807429" duration="15141000" />
       <workItem from="1618511067626" duration="2438000" />
       <workItem from="1618927592841" duration="710000" />
+      <workItem from="1619537740852" duration="1313000" />
     </task>
     <servers />
   </component>
