@@ -10,28 +10,65 @@ body{
 
 
 .header{
+    border: 1px solid black;
     max-width: 1280px;
     min-height: 323px;
+    margin: 0 auto;
+    background-color: #445162;
+    display: flex;
 }
 
-.header__navigation{}
+.header__navigation{
+    width: 50%;
+    padding-left: 50px;
+}
 
-.header__navigation__name{}
+.header__navigation__name{
+    font-size: 60px;
+    line-height: .9;
+    font-weight: 400;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+    color: #ffffff;
+}
 
 .header__navigation__links{}
 
-.header__navigation__links__item{}
 
-.header__navigation__links__item_link{}
+.header__navigation__links__item{
+
+}
+
+li{
+    list-style-type: none;
+}
+
+ul{
+    list-style-image: url("../images3/check_icon_346.png");
+}
+
+.header__navigation__links__item_link{
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+    color: #ffffff;
+    text-decoration: none;
+}
 
 
-.header__video{}
+.header__video{
+    border: 1px solid black;
+    width: 469px;
+    height: 214px;
+    margin: 50px;
+}
 
 
 
 
 .main{
-    max-width: 1280px;
+    width: 1280px;
+    margin: 0 auto;
 }
 
 .main__presentation{}
@@ -100,8 +137,9 @@ body{
 
 
 .footer{
-    max-width: 1280px;
-    min-height: 509px;
+    width: 1280px;
+    height: 509px;
+    margin: 0 auto;
 }
 
 .footer__section{}
