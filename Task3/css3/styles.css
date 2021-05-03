@@ -215,7 +215,7 @@ ul{
     padding: 0 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .main__screenshots__box__section__article__heading{
@@ -249,7 +249,7 @@ ul{
     font-weight: 400;
     color: #445161;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 50px 0 25px;
 }
 
 .main__reviews__box{
@@ -273,17 +273,26 @@ ul{
 .main__reviews__box__section_btn{
     width: 75px;
     height: 75px;
+    border-radius: 50%;
+    border: none;
+    background-color: #445161;
+    background-image: url("../images3/Clock_simple.png");
+    cursor: pointer;
+    position: relative;
+}
+
+.main__reviews__box__section_btn:hover{
+    background-color: khaki;
 }
 
 .main__reviews__box__section__text{
-    width: 470px;
+    width: 483px;
     height: 125px;
-    padding: 0 10px;
     margin-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: #ebebeb;
+    background-image: url("../images3/bg_review_190.png");
 }
 
 .main__reviews__box__section__text-1{
@@ -292,7 +301,7 @@ ul{
     font-weight: 400;
     font-style: italic;
     color: #333333;
-    margin: 0;
+    margin: 10px 10px 10px 20px;
 }
 
 .main__reviews__box__section__text-2{
@@ -300,23 +309,26 @@ ul{
     line-height: 18px;
     font-weight: 400;
     color: #989898;
+    margin: 10px 10px 10px 20px;
 }
 
 .main__buy-now{}
 
 .main__buy-now__heading{}
 
-.main__buy-now__article{}
+.main__buy-now__box{}
 
-.main__buy-now__article__heading{}
+.main__buy-now__box__article{}
 
-.main__buy-now__article__price{}
+.main__buy-now__box__article__heading{}
 
-.main__buy-now__article__list{}
+.main__buy-now__box__article__price{}
 
-.main__buy-now__article__list_item{}
+.main__buy-now__box__article__list{}
 
-.main__buy-now__article_btn{}
+.main__buy-now__box__article__list_item{}
+
+.main__buy-now__box__article_btn{}
 
 
 
