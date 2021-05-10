@@ -14,12 +14,12 @@ body{
     display: flex;
 }
 
-.header__navigation{
+.navigation{
     width: 50%;
     padding-left: 50px;
 }
 
-.header__navigation__name{
+.navigation-name{
     font-size: 60px;
     line-height: .9;
     font-weight: 400;
@@ -27,16 +27,16 @@ body{
     color: #ffffff;
 }
 
-.header__navigation__links{
+.navigation-links{
 
 }
 
 
-.header__navigation__links__item{
+.navigation-links__item{
     list-style-type: none;
 }
 
-.header__navigation__links__item_link:hover{
+.navigation-links__item_link:hover{
     color: cornflowerblue;
     border-bottom: 2px solid cornflowerblue;
 }
@@ -45,7 +45,7 @@ ul{
     list-style-image: url("../images3/check_icon_346.png");
 }
 
-.header__navigation__links__item_link{
+.navigation-links__item_link{
     font-size: 20px;
     line-height: 36px;
     font-weight: 400;
@@ -55,7 +55,7 @@ ul{
 }
 
 
-.header__photo{
+.header-photo{
     width: 469px;
     height: 214px;
     margin: 50px;
@@ -69,7 +69,7 @@ ul{
     margin: 0 auto;
 }
 
-.main__presentation{
+.main-presentation{
     min-height: 350px;
     display: flex;
     justify-content: space-between;
@@ -77,12 +77,12 @@ ul{
     box-sizing: border-box;
 }
 
-.main__presentation__text-block{
+.presentation-block{
     width: 700px;
     height: 100%;
 }
 
-.main__presentation__text-block__heading{
+.presentation-block__heading{
     font-size: 30px;
     line-height: 36px;
     font-weight: 400;
@@ -90,32 +90,32 @@ ul{
     margin: 35px 0;
 }
 
-.main__presentation__text-block__text{
+.presentation-block__text{
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     color: #333333;
 }
 
-.main__presentation__image{
+.presentation-image{
     width: 430px;
     height: 245px;
     margin: 40px 0;
 }
 
-.main__presentation__image_figcaption{
+.presentation-image__figcaption{
     color: cadetblue;
     font-weight: 600;
 }
 
-.main__dignities{
+.main-dignities{
     width: 100%;
     background-color: #f5f5f5;
     padding: 10px 50px 50px;
     box-sizing: border-box;
 }
 
-.main__dignities__heading{
+.dignities-heading{
     width: 360px;
     font-size: 30px;
     line-height: 36px;
@@ -124,26 +124,22 @@ ul{
     margin: 30px auto;
 }
 
-.main__dignities__box{
+.dignities-box{
     display: flex;
 }
 
-.main__dignities__box__box-1{
+.dignities-box-1{
     width: 50%;
 }
 
-.main__dignities__box__box-2{
-    width: 50%;
-}
-
-.main__dignities__box__details{
+.dignities-box-1__details{
     width: 540px;
     margin: 0 0 10px 40px;
     position: relative;
     cursor: pointer;
 }
 
-.main__dignities__box__details_summary{
+.dignities-box-1__summary{
     width: 540px;
     font-size: 16px;
     line-height: 24px;
@@ -151,15 +147,15 @@ ul{
     color: #333333;
 }
 
-.main__dignities__box__details_summary{
+.dignities-box-1__summary{
     list-style-type: none;
 }
 
-.main__dignities__box__details summary::-webkit-details-marker{
+.dignities-box-1__summary::-webkit-details-marker{
     display: none;
 }
 
-.main__dignities__box__details:before{
+.dignities-box-1__details:before{
     width: 30px;
     height: 28px;
     content: url("../images3/layer_2_30.png");
@@ -172,17 +168,17 @@ ul{
     padding-top: 2px;
 }
 
-.main__dignities__box__details[open]:before{
+.dignities-box-1__details[open]:before{
     content: url("../images3/layer_2_30-m.png");
 }
 
-.main__screenshots{
+.main-screenshots{
     width: 100%;
     height: 470px;
     box-sizing: border-box;
 }
 
-.main__screenshots__heading{
+.screenshots-heading{
     width: 175px;
     margin: 50px auto 40px;
     font-size: 30px;
@@ -191,37 +187,33 @@ ul{
     color: #445161;
 }
 
-.main__screenshots__box{
+.screenshots-box{
     padding: 0 50px;
     display: flex;
 }
 
-.main__screenshots__box-1{
+.screenshots-box-1{
     width: 50%;
 }
 
-.main__screenshots__box-2{
-    width: 50%;
-}
-
-.main__screenshots__box__article{
+.screenshots-article{
     display: flex;
     margin-bottom: 30px;
 }
 
-.main__screenshots__box__article_image{
+.screenshots-article__image{
     width: 200px;
     height: 150px;
 }
 
-.main__screenshots__box__article__element{
+.screenshots-information{
     padding: 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-.main__screenshots__box__article__element__heading{
+.screenshots-information__heading{
     font-size: 24px;
     line-height: 30px;
     font-weight: 400;
@@ -229,7 +221,7 @@ ul{
     margin: 0;
 }
 
-.main__screenshots__box__article__element__text{
+.screenshots-information__text{
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
@@ -238,14 +230,14 @@ ul{
 }
 
 
-.main__reviews{
+.main-reviews{
     width: 100%;
     height: 430px;
     background-color: #f5f5f5;
     box-sizing: border-box;
 }
 
-.main__reviews__heading{
+.reviews-heading{
     width: 115px;
     font-size: 30px;
     line-height: 36px;
@@ -255,25 +247,21 @@ ul{
     padding: 50px 0 25px;
 }
 
-.main__reviews__box{
+.reviews-box{
     padding: 0 50px;
     display: flex;
 }
 
-.main__reviews__box-1{
+.reviews-box-1{
     width: 50%;
 }
 
-.main__reviews__box-2{
-    width: 50%;
-}
-
-.main__reviews__box__article{
+.reviews-information{
     display: flex;
     margin-bottom: 30px;
 }
 
-.main__reviews__box__article_btn{
+.reviews-information__btn{
     width: 75px;
     height: 75px;
     border-radius: 50%;
@@ -284,16 +272,16 @@ ul{
     position: relative;
 }
 
-.main__reviews__box__article_btn:hover{
+.reviews-information__btn:hover{
     background-color: cornflowerblue;
 }
 
-.main__reviews__box__article_btn:active{
+.reviews-information__btn:active{
     top: 1px;
     left: 1px;
 }
 
-.main__reviews__box__article__text{
+.information-text{
     width: 483px;
     height: 125px;
     margin-left: 10px;
@@ -303,7 +291,7 @@ ul{
     background-image: url("../images3/bg_review_190.png");
 }
 
-.main__reviews__box__article__text-1{
+.information-text__text-1{
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -312,7 +300,7 @@ ul{
     margin: 10px 10px 10px 20px;
 }
 
-.main__reviews__box__article__text-2{
+.information-text__text-2{
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -452,7 +440,10 @@ ul{
     align-items: center;
 }
 
-.footer__section__container-1__form{}
+.footer__section__container-1__form{
+    display: flex;
+    flex-direction: column;
+}
 
 .footer__section__container-1__form_text-1{
     width: 500px;
