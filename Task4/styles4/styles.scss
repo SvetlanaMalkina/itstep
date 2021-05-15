@@ -1,0 +1,385 @@
+@import url(https://allfont.ru/allfont.css?fonts=droid-sans);
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&family=Oswald:wght@400;500;700&display=swap');
+
+html,body{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  width: 1920px;
+  min-height: 100px;
+  background-color: #df001f;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.navigation{
+  width: 530px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu{
+  width: 520px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0;
+}
+
+.menu__item {
+  width: 80px;
+  height: 20px;
+  list-style-type: none;
+}
+.menu__link{
+  width: 80px;
+  height: 20px;
+  font-family: 'Droid Sans', arial;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  &:hover{
+    color: black;
+    font-weight: 800;
+  }
+  &:after{
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: black;
+    transition: width 0.4s ease-in-out;
+  }
+  &:hover:after,
+  &:focus:after {
+    width: 80px;
+  }
+  &_active{
+    color: black;
+    font-weight: 800;
+  }
+}
+.logo{
+  width: 121px;
+  height: 76px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &__img1{
+    position: absolute;
+    z-index: 1;
+  }
+  &__img2{
+    position: absolute;
+    z-index: 2;
+  }
+}
+.header-box{
+  width: 540px;
+  display: flex;
+  justify-content: space-between;
+  &__purchase{
+    width: 200px;
+    height: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
+    border: none;
+    outline: none;
+    position: relative;
+    border-radius: 50px;
+    font-family: 'Droid Sans', arial;
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #df001f;
+    cursor: pointer;
+    &:hover{
+      color: black;
+      font-weight: 800;
+    }
+    &:active{
+      top: 1px;
+      left: 1px;
+    }
+  }
+}
+.social{
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+}
+.social-box{
+  &__btn{
+    background-color: #df001f;
+    border: none;
+    cursor: pointer;
+  }
+  .fa{
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+  }
+  .fa:hover{
+    color: black;
+  }
+  &__quantity{
+    font-family: 'Open Sans', arial;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
+.main{
+
+}
+.top-block {
+  width: 1920px;
+  min-height: 700px;
+  background-image: url("../images4/your_image_here_copy_1705.png");
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  border-bottom: 3px solid lightgrey;
+}
+.top-block_position{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-box1{
+  width: 560px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__heading{
+    font-family: Oswald;
+    font-size: 116px;
+    line-height: 85px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #df001f;
+    margin: 0;
+    padding-top: 35px;
+  }
+  &__subheading{
+    font-family: 'Great Vibes';
+    font-size: 80.3px;
+    line-height: 160px;
+    font-weight: 400;
+    color: #333333;
+    margin: 0;
+  }
+  &__btn{
+    width: 200px;
+    height: 50px;
+    background-color: #df001f;
+    border-radius: 25px;
+    font-family: 'Droid Sans';
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    &:hover{
+      color: black;
+      font-weight: 800;
+    }
+    &:active{
+      top: 1px;
+      left: 1px;
+    }
+  }
+}
+.content{
+  width: 1920px;
+  min-height: 3997px;
+  padding: 0 375px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.introducing{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 3px solid lightgrey;
+}
+.introducing_position{
+  padding: 106px 0;
+}
+.heading{
+  font-family: Oswald;
+  font-size: 32px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: #333333;
+  margin: 0;
+}
+.subheading{
+  font-family: 'Great Vibes';
+  font-size: 32px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: #df001f;
+  margin: 0;
+}
+.btn-box{
+  display: flex;
+  justify-content: flex-end;
+  &__btn{
+    width: 35px;
+    height: 35px;
+    background-color: #df001f;
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0 4px 8px 0;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    &:hover{
+      color: black;
+    }
+    &:active{
+      top: 1px;
+      left: 1px;
+    }
+  }
+}
+.introducing-box {
+  display: flex;
+  justify-content: space-between;
+}
+.card{
+  width: 370px;
+  height: 470px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+}
+.card-1{
+  background-image: url("../images4/image_base_1813.png");
+}
+.card-2{
+  background-image: url("../images4/image_base_1820.png");
+}
+.card-3{
+  background-image: url("../images4/image_base_1829.png");
+}
+.sub-card{
+  width: 370px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 15px 27px;
+  background-color: #df001f;
+  z-index: 2;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  bottom: -50px;
+  transition: bottom 1s;
+  pointer-events: none;
+  &__heading{
+    font-family: Oswald;
+    font-size: 22px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+  }
+  &__text{
+    font-family: 'Droid Sans';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+}
+.card:hover .sub_card{
+  bottom: 50px;
+}
+.concert{
+  display: flex;
+  justify-content: space-between;
+}
+.concert_position{
+  padding: 98px 0;
+}
+.upcoming{
+  width: 775px;
+  min-height: 405px;
+}
+.concert-box{
+  width: 100%;
+  display: flex;
+  &__photo{
+    width: 270px;
+    height: 289px;
+    background-image: url("../images4/base_1874.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__photo_position{
+    margin-top: 40px;
+  }
+  &__date1{
+    font-family: Oswald;
+    font-size: 45px;
+    line-height: 30px;
+    font-weight: 900;
+    color: #ffffff;
+    margin: 0;
+  }
+  &__date2{
+    font-family: Oswald;
+    font-size: 32px;
+    letter-spacing: 0.1em;
+    font-weight: 900;
+    color: #ffffff;
+    margin: 0;
+  }
+}
+.concert-information{
+
+}
