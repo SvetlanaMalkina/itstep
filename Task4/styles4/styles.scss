@@ -1,6 +1,18 @@
 @import url(https://allfont.ru/allfont.css?fonts=droid-sans);
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&family=Oswald:wght@400;500;700&display=swap');
 
+$background-color1: #df001f;
+$background-color2: #ffffff;
+$text-color1: #df001f;
+$text-color2: #ffffff;
+$text-color3: #333333;
+$text-color4: #000;
+$font-family1: 'Droid Sans';
+$font-family2: 'Open Sans';
+$font-family3: Oswald;
+$font-family4: 'Great Vibes';
+
+
 html,body{
   margin: 0;
   padding: 0;
@@ -8,7 +20,7 @@ html,body{
 .header{
   width: 1920px;
   min-height: 100px;
-  background-color: #df001f;
+  background-color: $background-color1;
   padding: 0 50px;
   display: flex;
   justify-content: space-between;
@@ -39,20 +51,20 @@ html,body{
 .menu__link{
   width: 80px;
   height: 20px;
-  font-family: 'Droid Sans', arial;
+  font-family: $font-family1;
   font-size: 13px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.05em;
-  color: #ffffff;
+  color: $text-color2;
   position: absolute;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   cursor: pointer;
   &:hover{
-    color: black;
+    color: $text-color4;
     font-weight: 800;
   }
   &:after{
@@ -68,7 +80,7 @@ html,body{
     width: 80px;
   }
   &_active{
-    color: black;
+    color: $text-color4;
     font-weight: 800;
   }
 }
@@ -97,22 +109,22 @@ html,body{
   &__purchase{
     width: 200px;
     height: 50px;
-    background-color: #ffffff;
+    background-color: $background-color2;
     box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
     border: none;
     outline: none;
     position: relative;
     border-radius: 50px;
-    font-family: 'Droid Sans', arial;
+    font-family: $font-family1;
     font-size: 12px;
     line-height: 30px;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: #df001f;
+    color: $text-color1;
     cursor: pointer;
     &:hover{
-      color: black;
+      color: $text-color4;
       font-weight: 800;
     }
     &:active{
@@ -128,7 +140,7 @@ html,body{
 }
 .social-box{
   &__btn{
-    background-color: #df001f;
+    background-color: $background-color1;
     border: none;
     cursor: pointer;
   }
@@ -137,18 +149,18 @@ html,body{
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: #ffffff;
+    color: $text-color2;
   }
   .fa:hover{
-    color: black;
+    color: $text-color4;
   }
   &__quantity{
-    font-family: 'Open Sans', arial;
+    font-family: $font-family2;
     font-size: 14px;
     line-height: 30px;
     font-weight: 400;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $text-color2;
   }
 }
 .main{
@@ -176,40 +188,40 @@ html,body{
   flex-direction: column;
   align-items: center;
   &__heading{
-    font-family: Oswald;
+    font-family: $font-family3;
     font-size: 116px;
     line-height: 85px;
     font-weight: 900;
     text-transform: uppercase;
-    color: #df001f;
+    color: $background-color1;
     margin: 0;
     padding-top: 35px;
   }
   &__subheading{
-    font-family: 'Great Vibes';
+    font-family: $font-family4;
     font-size: 80.3px;
     line-height: 160px;
     font-weight: 400;
-    color: #333333;
+    color: $text-color3;
     margin: 0;
   }
   &__btn{
     width: 200px;
     height: 50px;
-    background-color: #df001f;
+    background-color: $background-color1;
     border-radius: 25px;
-    font-family: 'Droid Sans';
+    font-family: $font-family1;
     font-size: 12px;
     line-height: 30px;
     font-weight: 700;
     letter-spacing: 0.1em;
-    color: #ffffff;
+    color: $text-color2;
     border: none;
     outline: none;
     position: relative;
     cursor: pointer;
     &:hover{
-      color: black;
+      color: $text-color4;
       font-weight: 800;
     }
     &:active{
@@ -236,21 +248,21 @@ html,body{
   padding: 106px 0;
 }
 .heading{
-  font-family: Oswald;
+  font-family: $font-family3;
   font-size: 32px;
   line-height: 30px;
   font-weight: 400;
   letter-spacing: 0.1em;
-  color: #333333;
+  color: $text-color3;
   margin: 0;
 }
 .subheading{
-  font-family: 'Great Vibes';
+  font-family: $font-family4;
   font-size: 32px;
   line-height: 30px;
   font-weight: 400;
   letter-spacing: 0.1em;
-  color: #df001f;
+  color: $text-color1;
   margin: 0;
 }
 .btn-box{
@@ -259,19 +271,19 @@ html,body{
   &__btn{
     width: 35px;
     height: 35px;
-    background-color: #df001f;
+    background-color: $background-color1;
     font-size: 24px;
     line-height: 20px;
     font-weight: 400;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $text-color2;
     margin: 0 4px 8px 0;
     border: none;
     outline: none;
     position: relative;
     cursor: pointer;
     &:hover{
-      color: black;
+      color: $text-color4;
     }
     &:active{
       top: 1px;
@@ -311,7 +323,7 @@ html,body{
   flex-direction: column;
   position: absolute;
   padding: 15px 27px;
-  background-color: #df001f;
+  background-color: $background-color1;
   z-index: 2;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -319,18 +331,18 @@ html,body{
   transition: bottom 1s;
   pointer-events: none;
   &__heading{
-    font-family: Oswald;
+    font-family: $font-family3;
     font-size: 22px;
     line-height: 20px;
     font-weight: 400;
-    color: #ffffff;
+    color: $text-color2;
     margin: 0;
   }
   &__text{
-    font-family: 'Droid Sans';
+    font-family: $font-family1;
     font-size: 16px;
     font-weight: 400;
-    color: #ffffff;
+    color: $text-color2;
     margin-bottom: 15px;
   }
 }
@@ -349,8 +361,9 @@ html,body{
   min-height: 405px;
 }
 .concert-box{
-  width: 100%;
+  width: 780px;
   display: flex;
+  border-bottom: 3px solid lightgrey;
   &__photo{
     width: 270px;
     height: 289px;
@@ -360,26 +373,174 @@ html,body{
     justify-content: center;
     align-items: center;
   }
-  &__photo_position{
-    margin-top: 40px;
-  }
   &__date1{
-    font-family: Oswald;
+    font-family: $font-family3;
     font-size: 45px;
     line-height: 30px;
     font-weight: 900;
-    color: #ffffff;
+    color: $text-color2;
     margin: 0;
   }
   &__date2{
-    font-family: Oswald;
+    font-family: $font-family3;
     font-size: 32px;
     letter-spacing: 0.1em;
     font-weight: 900;
-    color: #ffffff;
+    color: $text-color2;
     margin: 0;
   }
 }
+.concert-box_position{
+  padding-bottom: 5px;
+  padding-top: 40px;
+}
 .concert-information{
-
+  width: 275px;
+  &__heading{
+    font-family: $font-family3;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 500;
+    color: $text-color3;
+    margin: 20px 0;
+  }
+  &__text{
+    font-family: $font-family1;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $text-color3;
+    margin: 0;
+  }
+  &__btn{
+    width: 190px;
+    height: 50px;
+    background-color: $background-color1;
+    border-radius: 25px;
+    font-family: $font-family1;
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: $text-color2;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    &:hover{
+      color: $text-color4;
+      font-weight: 800;
+    }
+    &:active{
+      top: 1px;
+      left: 1px;
+    }
+  }
+  &__btn_position{
+    margin-top: 20px;
+  }
+}
+.concert-information_position{
+  margin-left: 80px;
+}
+.latest{
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+}
+.latest-video{
+  width: 372px;
+  height: 290px;
+  background-image: url("../images4/base_1926.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &__btn{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 62px;
+    color: $text-color1;
+  }
+}
+.founder{
+  width: 1170px;
+  height: 370px;
+  background-image: url("../images4/base_1940.png");
+  background-repeat: no-repeat;
+}
+.founder_position{
+  padding-top: 85px;
+  padding-left: 95px;
+}
+.founder-info{
+  width: 560px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  &__heading{
+    font-family: $font-family3;
+    font-size: 32px;
+    line-height: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $text-color2;
+    margin: 0;
+  }
+  &__text{
+    font-family: $font-family1;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: none;
+    color: $text-color2;
+  }
+  &__text_word{
+    font-family: $font-family4;
+    font-size: 65px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: none;
+    color: $text-color2;
+  }
+  &__btn{
+    width: 160px;
+    height: 50px;
+    background-color: $background-color2;
+    border-radius: 25px;
+    font-family: $font-family1;
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: $text-color1;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    &:hover{
+      color: $text-color4;
+    }
+    &:active{
+      top: 1px;
+      left: 1px;
+    }
+    &_position{
+      margin-top: 20px;
+    }
+  }
 }
