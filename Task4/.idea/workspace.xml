@@ -30,7 +30,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/Ruby30-x64/bin/scss.bat" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -45,6 +45,8 @@
       <workItem from="1621075403165" duration="34327000" />
       <workItem from="1621154382917" duration="10603000" />
       <workItem from="1621174621197" duration="3728000" />
+      <workItem from="1621527595561" duration="4687000" />
+      <workItem from="1621532641008" duration="8373000" />
     </task>
     <servers />
   </component>
