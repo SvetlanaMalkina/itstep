@@ -499,7 +499,8 @@ html, body {
 .music {
   width: 1170px;
   min-height: 480px;
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
 
 .popular {
   width: 790px;
@@ -598,7 +599,7 @@ html, body {
   height: 56px;
   background-image: url("../images4/scrub_1963.png"); }
   .track-block-2_position {
-    margin: 10px 0 20px 0; }
+    margin: 10px 0 30px 0; }
 
 .track-block-3 {
   width: 635px;
@@ -662,5 +663,61 @@ html, body {
   min-height: 480px;
   display: flex;
   flex-direction: column; }
+
+.instagram-box {
+  width: 370px;
+  min-height: 370px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between; }
+  .instagram-box_position {
+    margin-top: 30px; }
+  .instagram-box__photo {
+    width: 170px;
+    height: 169px; }
+
+.download {
+  width: 1170px;
+  height: 354px;
+  background-image: url("../images4/base_2162.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.download-block {
+  width: 740px;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.download-heading {
+  font-family: Oswald;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0; }
+
+.download-text {
+  font-family: "Droid Sans";
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin: 0; }
+
+.download-box {
+  width: 340px; }
+  .download-box_position {
+    margin-top: 35px; }
+  .download-box__btn {
+    width: 162px;
+    height: 50px;
+    background-color: #050708;
+    border-radius: 10px; }
 
 /*# sourceMappingURL=styles.css.map */

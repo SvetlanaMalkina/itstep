@@ -561,6 +561,7 @@ html,body{
   width: 1170px;
   min-height: 480px;
   display: flex;
+  justify-content: space-between;
 }
 .popular{
   width: 790px;
@@ -669,7 +670,7 @@ html,body{
   height: 56px;
   background-image: url("../images4/scrub_1963.png");
   &_position{
-    margin: 10px 0 20px 0;
+    margin: 10px 0 30px 0;
   }
 }
 .track-block-3{
@@ -740,4 +741,64 @@ html,body{
   min-height: 480px;
   display: flex;
   flex-direction: column;
+}
+.instagram-box{
+  width: 370px;
+  min-height: 370px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  &_position{
+    margin-top: 30px;
+  }
+  &__photo{
+    width: 170px;
+    height: 169px;
+  }
+}
+.download{
+  width: 1170px;
+  height: 354px;
+  background-image: url("../images4/base_2162.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.download-block{
+  width: 740px;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.download-heading{
+  font-family: $font-family3;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 500;
+  color: $text-color2;
+  margin: 0;
+}
+.download-text{
+  font-family: $font-family1;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: $text-color2;
+  margin: 0;
+}
+.download-box{
+  width: 340px;
+  &_position{
+    margin-top: 35px;
+  }
+  &__btn{
+    width: 162px;
+    height: 50px;
+    background-color: #050708;
+    border-radius: 10px;
+  }
 }
