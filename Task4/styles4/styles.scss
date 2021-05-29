@@ -157,6 +157,12 @@ html, body {
   @media screen and (max-width: 800px) {
     width: 290px;
   }
+  @media screen and (max-width: 576px){
+    width: 100px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 5px;
+  }
 }
 
 .social {
@@ -168,6 +174,9 @@ html, body {
   }
   @media screen and (max-width: 800px) {
     width: 130px;
+  }
+  @media screen and (max-width: 576px){
+    margin-bottom: 5px;
   }
 }
 
@@ -217,6 +226,9 @@ html, body {
   }
   @media screen and (max-width: 800px){
     width: 576px;
+  }
+  @media screen and (max-width: 576px){
+    width: 375px;
   }
 }
 #menu__toggle {
@@ -341,6 +353,19 @@ html, body {
 }
 
 .main {
+  margin: 0 auto;
+  @media screen and (max-width: 1920px) {
+    width: 1170px;
+  }
+  @media screen and (max-width: 1170px){
+    width: 800px;
+  }
+  @media screen and (max-width: 800px){
+    width: 576px;
+  }
+  @media screen and (max-width: 576px){
+    width: 375px;
+  }
 }
 
 .top-block {
@@ -362,6 +387,10 @@ html, body {
     background-position: left;
     height: 400px;
   }
+  @media screen and (max-width: 576px){
+    width: 375px;
+    height: 300px;
+  }
 }
 
 .top-block_position {
@@ -372,6 +401,9 @@ html, body {
   @media screen and (max-width: 1920px){
     justify-content: flex-start;
     align-items: center;
+  }
+  @media screen and (max-width: 576px){
+    justify-content: center;
   }
 }
 
@@ -434,6 +466,10 @@ html, body {
       font-size: 90px;
       line-height: 75px;
       padding-top: 0;
+      @media screen and (max-width: 576px){
+        font-size: 48px;
+        line-height: 40px;
+      }
     }
     &__subheading{
       font-size: 64px;
@@ -441,7 +477,11 @@ html, body {
     }
   }
   @media screen and (max-width: 800px){
-    padding-top: 50px;
+    max-height: 350px;
+  }
+  @media screen and (max-width: 576px){
+    height: 100%;
+    justify-content: center;
   }
 }
 
@@ -474,6 +514,12 @@ html, body {
       width: 450px;
     }
   }
+  @media screen and (max-width: 576px){
+    width: 375px;
+    &_color {
+      width: 300px;
+    }
+  }
 }
 
 .content {
@@ -494,6 +540,9 @@ html, body {
   @media screen and (max-width: 800px) {
     width: 576px;
   }
+  @media screen and (max-width: 576px){
+    width: 375px;
+  }
 }
 
 .introducing {
@@ -504,6 +553,9 @@ html, body {
 
 .introducing_position {
   padding: 106px 0;
+  @media screen and (max-width: 576px){
+    padding: 30px 0 5px 0;
+  }
 }
 
 .heading {
@@ -639,6 +691,9 @@ html, body {
 
 .concert_position {
   padding: 98px 0;
+  @media screen and (max-width: 576px){
+    padding: 30px 0;
+  }
 }
 
 .upcoming {
@@ -649,6 +704,9 @@ html, body {
   }
   @media screen and (max-width: 800px) {
     width: 576px;
+  }
+  @media screen and (max-width: 576px){
+    width: 375px;
   }
 }
 
@@ -682,6 +740,10 @@ html, body {
     font-weight: 900;
     color: $text-color2;
     margin: 0;
+  }
+  @media screen and (max-width: 576px){
+    flex-direction: column;
+    margin-left: 55px;
   }
 }
 
@@ -741,6 +803,9 @@ html, body {
 
   &__btn_position {
     margin-top: 20px;
+    @media screen and (max-width: 576px){
+      margin-bottom: 20px;
+    }
   }
   @media screen and (max-width: 800px) {
     width: 250px;
@@ -751,6 +816,9 @@ html, body {
   margin-left: 80px;
   @media screen and (max-width: 800px) {
     margin-left: 30px;
+  }
+  @media screen and (max-width: 576px){
+    margin-left: 0;
   }
 }
 
@@ -767,6 +835,9 @@ html, body {
   }
   @media screen and (max-width: 800px) {
     width: 576px;
+  }
+  @media screen and (max-width: 576px){
+    width: 375px;
   }
 }
 
@@ -828,11 +899,12 @@ html, body {
     align-items: center;
   }
   @media screen and (max-width: 800px) {
-    width: 576px;
-  }
-  @media screen and (max-width: 800px) {
+    width: 557px;
     justify-content: center;
     background-position: left;
+  }
+  @media screen and (max-width: 576px){
+    width: 357px;
   }
 }
 
@@ -841,6 +913,10 @@ html, body {
   padding-left: 95px;
   @media screen and (max-width: 1170px){
     padding-left: 20px;
+  }
+  @media screen and (max-width: 576px){
+    padding: 0 10px;
+    margin-bottom: 30px;
   }
 }
 
@@ -864,6 +940,11 @@ html, body {
       font-size: 28px;
       line-height: 18px;
     }
+    @media screen and (max-width: 576px){
+      font-size: 20px;
+      line-height: 20px;
+      text-align: center;
+    }
   }
 
   &__text {
@@ -874,6 +955,7 @@ html, body {
     color: $text-color2;
     @media screen and (max-width: 1170px){
       font-size: 18px;
+      text-align: center;
     }
   }
   &__text_word {
@@ -916,6 +998,9 @@ html, body {
 
     &_position {
       margin-top: 20px;
+      @media screen and (max-width: 576px){
+        margin-top: 0;
+      }
     }
     @media screen and (max-width: 1170px){
       margin: 0 auto;
@@ -923,6 +1008,10 @@ html, body {
   }
   @media screen and (max-width: 1170px){
     width: 450px;
+  }
+  @media screen and (max-width: 576px){
+    width: 300px;
+    justify-content: center;
   }
 }
 
@@ -937,6 +1026,9 @@ html, body {
   }
   @media screen and (max-width: 800px) {
     width: 576px;
+  }
+  @media screen and (max-width: 576px){
+    width: 375px;
   }
 }
 
@@ -974,6 +1066,15 @@ html, body {
   width: 640px;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 800px){
+    width: 440px;
+  }
+  @media screen and (max-width: 576px){
+    width: 200px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
 }
 
 .sub-block1 {
@@ -1000,6 +1101,9 @@ html, body {
 
   &__btn_position {
     margin-right: 3px;
+  }
+  @media screen and (max-width: 576px){
+    margin-bottom: 5px;
   }
 }
 
@@ -1068,7 +1172,10 @@ html, body {
     margin: 10px 0 30px 0;
   }
   @media screen and (max-width: 800px){
-    width: 500px;
+    width: 440px;
+  }
+  @media screen and (max-width: 576px){
+    width: 240px;
   }
 }
 
@@ -1080,6 +1187,9 @@ html, body {
     width: 500px;
     flex-direction: column;
     justify-content: flex-start;
+  }
+  @media screen and (max-width: 576px){
+   display: none;
   }
 }
 
@@ -1143,6 +1253,10 @@ html, body {
     width: 576px;
     margin-bottom: 50px;
   }
+  @media screen and (max-width: 576px){
+    width: 375px;
+    margin: 0;
+  }
 }
 
 .track-list {
@@ -1155,6 +1269,10 @@ html, body {
     line-height: 40px;
     font-weight: 400;
     color: $text-color3;
+    @media screen and (max-width: 576px){
+      line-height: 24px;
+      margin-left: 10px;
+    }
   }
 }
 
@@ -1207,6 +1325,10 @@ html, body {
   @media screen and (max-width: 800px) {
     width: 576px;
   }
+  @media screen and (max-width: 576px){
+    width: 375px;
+    margin: 0;
+  }
 }
 
 .download-block {
@@ -1228,6 +1350,10 @@ html, body {
   font-weight: 500;
   color: $text-color2;
   margin: 0;
+  @media screen and (max-width: 576px){
+    font-size: 28px;
+    line-height: 40px;
+  }
 }
 
 .download-text {
@@ -1238,6 +1364,11 @@ html, body {
   letter-spacing: 0.05em;
   color: $text-color2;
   margin: 0;
+  @media screen and (max-width: 576px){
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
 }
 
 .download-box {
@@ -1320,6 +1451,9 @@ html, body {
 
   &_position {
     margin-top: 80px;
+    @media screen and (max-width: 576px){
+      margin-top: 40px;
+    }
   }
 
   &__text {
@@ -1349,6 +1483,9 @@ html, body {
     cursor: pointer;
     background-color: white;
   }
+  @media screen and (max-width: 576px){
+    width: 375px;
+  }
 }
 
 .footer {
@@ -1371,6 +1508,9 @@ html, body {
   }
   @media screen and (max-width: 800px) {
     width: 576px;
+    @media screen and (max-width: 576px){
+      width: 375px;
+    }
   }
 }
 
@@ -1378,6 +1518,9 @@ html, body {
   width: 520px;
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 576px){
+    width: 375px;
+  }
 }
 
 .footer-menu {
@@ -1391,6 +1534,9 @@ html, body {
     width: 80px;
     height: 20px;
     list-style-type: none;
+  }
+  @media screen and (max-width: 576px){
+    width: 375px;
   }
 }
 
@@ -1438,5 +1584,8 @@ html, body {
     text-transform: none;
     color: $text-color1;
     white-space: pre;
+  }
+  @media screen and (max-width: 576px){
+    text-align: center;
   }
 }
