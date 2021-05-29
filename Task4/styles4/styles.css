@@ -763,19 +763,19 @@ html, body {
   background-repeat: no-repeat; }
   @media screen and (max-width: 1170px) {
     .founder {
-      width: 800px;
+      width: 750px;
       background-position: right;
       display: flex;
       justify-content: flex-start;
       align-items: center; } }
   @media screen and (max-width: 800px) {
     .founder {
-      width: 557px;
+      width: 576px;
       justify-content: center;
       background-position: left; } }
   @media screen and (max-width: 576px) {
     .founder {
-      width: 357px; } }
+      width: 375px; } }
 
 .founder_position {
   padding-top: 85px;
@@ -783,9 +783,9 @@ html, body {
   @media screen and (max-width: 1170px) {
     .founder_position {
       padding-left: 20px; } }
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 800px) {
     .founder_position {
-      padding: 0 10px;
+      padding: 0;
       margin-bottom: 30px; } }
 
 .founder-info {

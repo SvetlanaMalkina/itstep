@@ -892,19 +892,19 @@ html, body {
   background-image: url("../images4/base_1940.png");
   background-repeat: no-repeat;
   @media screen and (max-width: 1170px){
-    width: 800px;
+    width: 750px;
     background-position: right;
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
   @media screen and (max-width: 800px) {
-    width: 557px;
+    width: 576px;
     justify-content: center;
     background-position: left;
   }
   @media screen and (max-width: 576px){
-    width: 357px;
+    width: 375px;
   }
 }
 
@@ -914,8 +914,8 @@ html, body {
   @media screen and (max-width: 1170px){
     padding-left: 20px;
   }
-  @media screen and (max-width: 576px){
-    padding: 0 10px;
+  @media screen and (max-width: 800px){
+    padding: 0;
     margin-bottom: 30px;
   }
 }
