@@ -131,15 +131,17 @@ function division(arg1,arg2){
 avg = division(5,3);
 console.log(avg);
 
-//Шестое задание
+//Шестое задание (НЕ ПОЛУЧАЕТСЯ!)
 function mathOperation(arg1, arg2, operation){
     switch (operation='+'){
         case sum:
-            console.log(sum);
+            avg = sum(arg1,arg2);
+            console.log(avg);
             break;
     }
     switch (operation='-'){
         case difference:
+            avg = difference(arg1,arg2);
             console.log(avg);
             break;
     }
