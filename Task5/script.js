@@ -133,21 +133,38 @@ console.log(avg);
 
 //Шестое задание
 function mathOperation(arg1, arg2, operation){
-    switch (operation){
+    switch (operation='+'){
         case sum:
-            console.log()
+            console.log(sum);
+            break;
+    }
+    switch (operation='-'){
+        case difference:
+            console.log(avg);
+            break;
+    }
+    switch (operation='*'){
+        case multiplication:
+            avg = multiplication(arg1,arg2);
+            console.log(avg);
+            break;
+    }
+    switch (operation='/'){
+        case division:
+            avg = division(arg1,arg2);
+            console.log(avg);
             break;
     }
 }
-mathOperation(5,3);
+mathOperation(5,3,'+');
 
 //Домашняя работа 2
 //Задание 1
-function power(val, pow) {
+/*function power(val, pow) {
     if (pow!=1) {
         return val * power(val, pow - 1);
     } else {
         return val;
     }
 }
-console.log( power(2, 4) );
+console.log( power(2, 4) );*/
