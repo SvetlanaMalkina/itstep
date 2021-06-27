@@ -1,3 +1,5 @@
+//Домашнее задание 1
+
 //Первое задание
 //var a = 1, b = 1, c, d;
 //c = ++a; alert(c);// 2
@@ -105,26 +107,47 @@ switch (a){
 
 //Пятое задание
 
-/*function sum(x,y){
-    return(x+y)
+function sum(arg1,arg2){
+    return(arg1+arg2)
 }
 avg = sum(5,3);
 console.log(avg);
 
-function difference(x,y){
-    return(x-y)
+function difference(arg1,arg2){
+    return(arg1-arg2)
 }
 avg = difference(5,3);
 console.log(avg);
 
-function multiplication(x,y){
-    return(x*y)
+function multiplication(arg1,arg2){
+    return(arg1*arg2)
 }
 avg = multiplication(5,3);
 console.log(avg);
 
-function division(x,y){
-    return(x/y)
+function division(arg1,arg2){
+    return(arg1/arg2)
 }
 avg = division(5,3);
-console.log(avg);*/
+console.log(avg);
+
+//Шестое задание
+function mathOperation(arg1, arg2, operation){
+    switch (operation){
+        case sum:
+            console.log()
+            break;
+    }
+}
+mathOperation(5,3);
+
+//Домашняя работа 2
+//Задание 1
+function power(val, pow) {
+    if (pow!=1) {
+        return val * power(val, pow - 1);
+    } else {
+        return val;
+    }
+}
+console.log( power(2, 4) );
