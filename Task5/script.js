@@ -107,6 +107,7 @@ switch (a){
 
 //Пятое задание
 
+/*
 function sum(arg1,arg2){
     return(arg1+arg2)
 }
@@ -130,43 +131,62 @@ function division(arg1,arg2){
 }
 avg = division(5,3);
 console.log(avg);
+*/
 
-//Шестое задание (НЕ ПОЛУЧАЕТСЯ!)
-function mathOperation(arg1, arg2, operation){
-    switch (operation='+'){
-        case sum:
-            avg = sum(arg1,arg2);
-            console.log(avg);
-            break;
-    }
-    switch (operation='-'){
-        case difference:
-            avg = difference(arg1,arg2);
-            console.log(avg);
-            break;
-    }
-    switch (operation='*'){
-        case multiplication:
-            avg = multiplication(arg1,arg2);
-            console.log(avg);
-            break;
-    }
-    switch (operation='/'){
-        case division:
-            avg = division(arg1,arg2);
-            console.log(avg);
-            break;
-    }
-}
-mathOperation(5,3,'+');
+//Шестое задание
+// function mathOperation(arg1, arg2, operation){
+//     switch (operation='+'){
+//         case '+':
+//             return sum(arg1,arg2)
+//     }
+//     switch (operation='-'){
+//         case '-':
+//             return difference(arg1,arg2)
+//     }
+//     switch (operation='*'){
+//         case '*':
+//             return multiplication(arg1,arg2)
+//     }
+//     switch (operation='/'){
+//         case '/':
+//             return division(arg1,arg2)
+//     }
+// }
+// let num1=9;
+// let num2=3;
+// let oper='+';
+// let result=mathOperation(num1,num2,oper);
+// console.log(result)
 
 //Домашняя работа 2
 //Задание 1
-/*function power(val, pow) {
+function power(val, pow) {
     if (pow!=1) {
         return val * power(val, pow - 1);
     } else {
         return val;
     }
 }
-console.log( power(2, 4) );*/
+console.log( power(2, 4) );
+
+//Задание 2
+let sum=prompt('Введите сумму в рублях');
+if(sum[sum.length - 2] === '1') {
+    sum = +sum;
+    alert(`Ваша сумма ${sum} рублей успешно зачислена`)
+}
+else {
+    switch (Number(sum[sum.length - 1])){
+        case 1:
+            alert(`Ваша сумма ${sum} рубль успешно зачислена`);
+            break;
+        case 2:
+        case 3:
+        case 4:
+            alert(`Ваша сумма ${sum} рубля успешно зачислена`);
+            break;
+        default:
+            alert(`Ваша сумма ${sum} рублей успешно зачислена`);
+            break;
+    }
+}
