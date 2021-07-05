@@ -1,25 +1,10 @@
-//Предыдущее домашнее задание.
-
-//Задание 4 (???)
-
-/*function getRandomInRange(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-let number = getRandomInRange(1000, 9999);
-let guessing = +prompt('Какое четырёхзначное число загадано? Ваши предположения.');
-do (){
-    if()
-}*/
-
-
-//Текущее домашнее задание
 
 //Задание 1
 
 /*mas = [15, 'hello', 'trump', 23, 'world', 999, 176];
 let f = 0;
-for (let f = 0  ; f < mas.length; f++){
-    let result = f + '-' + mas[f];
+for (let index = 0  ; index < mas.length; index++){
+    let result = index + ' --- ' + mas[index] + '<br>';
     document.write(result);
 }*/
 
@@ -49,46 +34,46 @@ chessboard(8, 8);
 //Задание 3
 
  /*let arr= [
-    [45,3,2,98,54,-99,-100,12], //15
+    [45,3,2,98,54,-99,-100,12],
     [3,9,4,2,5,4,1], //28
-    [-12,-32,-10,78,-14,36], //46
-    [-14,3], //-11
-    [15,18,16] //49
-    //127
+    [-12,-32,-10,78,-14,36],
+    [-14,3],
+    [15,18,16]
 ]
 let sum = 0;
-
-function foo(array) {
-
-    array.forEach(function(value, index) {
-        Array.isArray(value) ? foo(value) : sum += value;
-    });
-
-    return sum;
-}
-
-console.log(foo(arr));
-*///Задание 4
-
-/*let mas1 = [3,5,12,-8,1];
-let min = mas1[0];
-let max = mas1[0];
-let avg =0;
-for (let num of mas1) {
-    if (min > num) {
-        min = num;
-    } else {
-        min = min;
-    }
-    if (max < num) {
-        max = num;
-    } else {
-        max = max;
+for (let i=0; i<arr.length; i++){
+    for (let j=0; j<arr[i].length; j++){
+        sum += arr[i][j];
     }
 }
-console.log(min);
-console.log(max);
-let i = 0;
-for (i = mas1[0]; i < mas1.length; i++){
-    avg (mas1)
-    console.log(avg)*/
+console.log(sum);*/
+
+//Задание 4
+
+/*
+let mas1 = [1,2,3,4,5];
+function min (arr){
+    let minEl = arr[0];
+    for (const minElement of arr){
+        minEl=minElement<minEl?minElement:minEl;
+    }
+    return minEl;
+}
+function max (arr){
+    let maxEl = arr[0];
+    for (const maxElement of arr){
+        maxEl=maxElement>maxEl?maxElement:maxEl;
+    }
+    return maxEl;
+}
+function avg (arr){
+    let sum1=0;
+    for(const arrElement of arr){
+        sum1 += arrElement;
+    }
+    return sum1/arr.length;
+}
+
+console.log(min(mas1));
+console.log(max(mas1));
+console.log(avg(mas1));*/
