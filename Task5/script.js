@@ -1,79 +1,61 @@
+//Задача 1
 
-//Задание 1
+//Дан массив со строками. Оставьте в нем только те строки, длина которых больше 5-ти символов.
 
-/*mas = [15, 'hello', 'trump', 23, 'world', 999, 176];
-let f = 0;
-for (let index = 0  ; index < mas.length; index++){
-    let result = index + ' --- ' + mas[index] + '<br>';
-    document.write(result);
-}*/
+let mas1 = ['Kira', 'Aleksandr', 'Valentina', 'Artur', 'Olga', 'Violeta'];
+let newMas1 = mas1.filter(elem => elem.length > 5);
+console.log(newMas1);
 
-//Задание 2
-/*
-function chessboard(a, b) {
-    let slash1 = "# ";
-    let slash2 = " #";
-    let option1 = "";
-    let option2 = "";
-    for (let i = 0; i < a / 2; i++) {
-        option1 += slash2;
-        option2 += slash1;
-    }
+//Задача 2
 
-    for (let j = 0; j < b; j++) {
-        if (j % 2 != 0) {
-            console.log(option1);
-        } else {
-            console.log(option2);
+//Дан массив с числами. Найдите сумму первых N элементов до первого нуля.
+
+let mas2 = [1, 2, 3, 0, 4, 5, 6];
+let sum = 0;
+function sumElements (arr){
+    for(let index = 0; index < arr.length; index++) {
+        if (arr[index] !== 0){
+            sum += arr[index];
+        }
+        if (arr[index] === 0){
+            break;
         }
     }
 }
-chessboard(8, 8);
-*/
+sumElements(mas2);
+console.log(sum);
 
-//Задание 3
+//Задача 3
 
- /*let arr= [
-    [45,3,2,98,54,-99,-100,12],
-    [3,9,4,2,5,4,1], //28
-    [-12,-32,-10,78,-14,36],
-    [-14,3],
-    [15,18,16]
-]
-let sum = 0;
-for (let i=0; i<arr.length; i++){
-    for (let j=0; j<arr[i].length; j++){
-        sum += arr[i][j];
+// У вас есть массив объектов user, и в каждом из них есть user.name.
+// Напишите код, который преобразует их в массив имён.
+
+let user = [
+    { name: "Вася", age: 25 },
+    { name: "Петя", age: 30 },
+    { name: "Маша", age: 28 }
+    ];
+let result1 = user.map (item => item.name);
+console.log(result1);
+
+//Задача 4
+
+//Напишите функцию getAverageAge(users), которая принимает массив объектов со свойством age
+// и возвращает средний возраст.
+// Формула вычисления среднего арифметического значения: (age1 + age2 + ... + ageN) / N.
+
+let users = [
+    { name: "Вася", age: 25 },
+    { name: "Петя", age: 30 },
+    { name: "Маша", age: 28 }
+    ];
+users = users.map (item => item.age);
+function getAverageAge(arr){
+    let sum1 = 0;
+    for(let i = 0; i < arr.length; i++) {
+        sum1 += arr[i];
     }
+    let num = sum1 / arr.length;
+    return Math.ceil(num);
 }
-console.log(sum);*/
-
-//Задание 4
-
-/*
-let mas1 = [1,2,3,4,5];
-function min (arr){
-    let minEl = arr[0];
-    for (const minElement of arr){
-        minEl=minElement<minEl?minElement:minEl;
-    }
-    return minEl;
-}
-function max (arr){
-    let maxEl = arr[0];
-    for (const maxElement of arr){
-        maxEl=maxElement>maxEl?maxElement:maxEl;
-    }
-    return maxEl;
-}
-function avg (arr){
-    let sum1=0;
-    for(const arrElement of arr){
-        sum1 += arrElement;
-    }
-    return sum1/arr.length;
-}
-
-console.log(min(mas1));
-console.log(max(mas1));
-console.log(avg(mas1));*/
+console.log(getAverageAge(users));

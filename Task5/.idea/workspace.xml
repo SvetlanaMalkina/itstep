@@ -29,7 +29,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../материалы с уроков/Материалы/Материалы/JS006/homework.js" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="script.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/script.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.script.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -45,7 +56,9 @@
       <workItem from="1624998701384" duration="9469000" />
       <workItem from="1625222252431" duration="6158000" />
       <workItem from="1625384837307" duration="12952000" />
-      <workItem from="1625477293443" duration="2948000" />
+      <workItem from="1625477293443" duration="3897000" />
+      <workItem from="1625582723889" duration="7452000" />
+      <workItem from="1625931038315" duration="15347000" />
     </task>
     <servers />
   </component>
