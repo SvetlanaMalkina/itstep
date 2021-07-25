@@ -10,10 +10,10 @@ class TextNews{
     }
     print (){
         let tit = `<h1 style="font-size: 28px; color: black"> ${this.title} </h1>`;
-        let date = `${this.date}`;
-        if (date = (new Date()).getTime()){
-            date = 'Сегодня';
-        }
+        let date = `${this.date.setHours(0, 0, 0, 0)}`;
+        let dateToday = Date.now().setHours(0, 0, 0, 0);
+        let diff = (date.getTime() - dateToday.getTime());
+        console.log(diff)
 
         let text = `<p style="font-size: 18px; color: black"> ${this.text} </p>`;
         let tag = `${this.tags}`;
@@ -25,6 +25,7 @@ let myObj = new TextNews ('Заголовок', '24.07.2021',
     'Очень интересный текст про очень интересное что-то, которое вам прям просто очень надо',
     ['#интересно', '#весело', '#прикольно'].join(' '));
 myObj.print();
+
 
 //Задание 2
 
