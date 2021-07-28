@@ -4,32 +4,45 @@ class TextNews{
     constructor(title,date,
                 text, tags) {
         this.title=title;
-        this.date=date;
+        this.date= date;
         this.text=text;
-        this.tags=tags;
+        this.tags=tags.join(' ');
     }
-    print (){
-        let tit = `<h1 style="font-size: 28px; color: black"> ${this.title} </h1>`;
-        let date = `${this.date.setHours(0, 0, 0, 0)}`;
-        let dateToday = Date.now().setHours(0, 0, 0, 0);
-        let diff = (date.getTime() - dateToday.getTime());
-        console.log(diff)
 
-        let text = `<p style="font-size: 18px; color: black"> ${this.text} </p>`;
-        let tag = `${this.tags}`;
-        document.write(tit, date, text, tag);
+    outputDate (date){
+        if ((new Date().getUTCDate()) - this.date.slice(0,2) < 1){
+            return 'Сегодня';
+        }
+        else if ((new Date().getUTCDate()) - this.date.slice(0,2) === 1){
+            return `${(new Date().getUTCDate()) - this.date.slice(0,2)} день назад`;
+        }
+        else if ((new Date().getUTCDate()) - this.date.slice(0,2) >=2 && (new Date().getUTCDate()) - date.slice(0,2) <= 4){
+            return `${(new Date().getUTCDate()) - this.date.slice(0,2)} дня назад`;
+        }
+        else if ((new Date().getUTCDate()) - this.date.slice(0,2) >= 5 && (new Date().getUTCDate()) - date.slice(0,2) <= 7){
+            return `${(new Date().getUTCDate()) - this.date.slice(0,2)} дней назад`;
+        }
+        else {
+            return `${('0' + (new Date().getUTCDate())).slice(-2)}.${('0' + (new Date().getUTCMonth() +1)).slice(-2)}.${new Date().getUTCFullYear()}`;
+        }
+    }
+    print = function (){
+        let result = `<h1 style="font-size: 28px; color: black"> ${this.title} </h1>
+        <p style="font-size: 18px; color: black">${this.outputDate(this.date)}</p>
+        <p style="font-size: 20px; color: black"> ${this.text} </p>
+        <p style="font-size: 18px; color: black">${this.tags}</p>`;
+        document.write(result);
     }
 }
 
-let myObj = new TextNews ('Заголовок', '24.07.2021',
+let myObj = new TextNews ('Заголовок', '21.07.2021',
     'Очень интересный текст про очень интересное что-то, которое вам прям просто очень надо',
-    ['#интересно', '#весело', '#прикольно'].join(' '));
+    ['#интересно', '#весело', '#прикольно']);
 myObj.print();
 
 
 //Задание 2
 
-/*
 let number = prompt("Введите целое число от 0 до 999");
 function NumToObj(num)
 {
@@ -61,4 +74,3 @@ function NumToObj(num)
 }
 let obj = NumToObj(number);
 console.log(obj);
-*/
