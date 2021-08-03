@@ -1,76 +1,125 @@
-//Задание 1
+//Задание 1.
 
-class TextNews{
-    constructor(title,date,
-                text, tags) {
-        this.title=title;
-        this.date= date;
-        this.text=text;
-        this.tags=tags.join(' ');
-    }
+//ES5
+/*function Product (name, price){
+    this.name = name;
+    this.price = price;
+}
+Product.prototype.make25PercentDiscount = function (){
+    console.log(this.price * 0.75);
+}
+let obj = new Product('cake', 3);
+console.log(obj);
+obj.make25PercentDiscount();*/
 
-    outputDate (date){
-        if ((new Date().getUTCDate()) - this.date.slice(0,2) < 1){
-            return 'Сегодня';
-        }
-        else if ((new Date().getUTCDate()) - this.date.slice(0,2) === 1){
-            return `${(new Date().getUTCDate()) - this.date.slice(0,2)} день назад`;
-        }
-        else if ((new Date().getUTCDate()) - this.date.slice(0,2) >=2 && (new Date().getUTCDate()) - date.slice(0,2) <= 4){
-            return `${(new Date().getUTCDate()) - this.date.slice(0,2)} дня назад`;
-        }
-        else if ((new Date().getUTCDate()) - this.date.slice(0,2) >= 5 && (new Date().getUTCDate()) - date.slice(0,2) <= 7){
-            return `${(new Date().getUTCDate()) - this.date.slice(0,2)} дней назад`;
-        }
-        else {
-            return `${('0' + (new Date().getUTCDate())).slice(-2)}.${('0' + (new Date().getUTCMonth() +1)).slice(-2)}.${new Date().getUTCFullYear()}`;
-        }
+//console.log('------------------------------------------');
+//ES6
+/*class Product1{
+    constructor(name1, price1) {
+        this.name = name1;
+        this.price = price1;
     }
-    print = function (){
-        let result = `<h1 style="font-size: 28px; color: black"> ${this.title} </h1>
-        <p style="font-size: 18px; color: black">${this.outputDate(this.date)}</p>
-        <p style="font-size: 20px; color: black"> ${this.text} </p>
-        <p style="font-size: 18px; color: black">${this.tags}</p>`;
-        document.write(result);
+    make25PercentDiscount(){
+        console.log(this.price * 0.75);
     }
 }
 
-let myObj = new TextNews ('Заголовок', '21.07.2021',
-    'Очень интересный текст про очень интересное что-то, которое вам прям просто очень надо',
-    ['#интересно', '#весело', '#прикольно']);
-myObj.print();
-
+let obj1 = new Product1('cake', 3);
+console.log(obj1);
+obj1.make25PercentDiscount();*/
 
 //Задание 2
 
-let number = prompt("Введите целое число от 0 до 999");
-function NumToObj(num)
-{
-    let arrNumber = num.split('');
-    let objNumber = {};
-    if (arrNumber.length == 3){
-        objNumber['units'] = +arrNumber[0];
-        objNumber['tens'] = +arrNumber[1];
-        objNumber['hundreds'] = +arrNumber[2];
-        return objNumber;
-    }
-    if (arrNumber.length == 2){
-        objNumber['units'] = +arrNumber[0];
-        objNumber['tens'] = +arrNumber[1];
-        objNumber['hundreds'] = 0;
-        return objNumber;
-    }
-    if (arrNumber.length == 1){
-        objNumber['units'] = +arrNumber[0];
-        objNumber['tens'] = 0;
-        objNumber['hundreds'] = 0;
-        return objNumber;
-    }
-    else {
-        console.log('Введённые данные не соответствуют условию');
-        return objNumber;
-    }
-
+//ES5
+/*
+function Post (author, text, date){
+    this.author = author;
+    this.text = text;
+    this.date = date;
 }
-let obj = NumToObj(number);
-console.log(obj);
+Post.prototype.edit = function (newText){
+    this.text = newText;
+}
+let obj3 = new Post('ABC', "Первый текст", '03-08-2021');
+obj3.edit('Второй текст');
+console.log(obj3);
+
+function AttachedPost(author,text, date){
+    Post.call(this, author,text, date);
+    this.highlighted = false;
+}
+AttachedPost.prototype = Object.create(Post.prototype);
+AttachedPost.prototype.makeTextHighlighted = function (){
+    this.highlighted = true;
+}
+AttachedPost.prototype.constructor = AttachedPost;
+let obj4 = new AttachedPost('DEF', 'Третий текст', '31-07-2021');
+obj4.edit('Четвёртый текст');
+obj4.makeTextHighlighted();
+console.log(obj4);
+*/
+
+//ES6
+/*class Post1 {
+    constructor(author,text, date) {
+        this.author = author;
+        this.text = text;
+        this.date = date;
+    }
+    edit(newText){
+        this.text = newText;
+    }
+}
+let obj5 = new Post1('ABC', "Первый текст", '03-08-2021');
+obj5.edit('Второй текст');
+console.log(obj5);
+
+class AttachedPost1 extends Post1{
+    constructor(author,text, date) {
+        super(author,text, date);
+    }
+    fullEdit1(newText){
+        super.edit();
+    }
+    makeTextHighlighted(){
+        this.highlighted = true;
+    }
+}
+let obj6 = new AttachedPost1('DEF', 'Третий текст', '31-07-2021');
+obj6.edit('Четвёртый текст');
+obj6.makeTextHighlighted();
+console.log(obj6);*/
+
+//Задание 3
+
+class NewsFeed {
+    constructor(arr) {
+        this.arr = arr;
+    }
+    get () {
+        if (this.arr.length === 0) {
+            return undefined;
+        }
+        return this.arr[this.arr.length - 1];
+    }
+    print(){
+        return this.arr.join(' ');
+    }
+    newPush(text){
+        return this.arr.push(text);
+    }
+    newDelete(i){
+        return (delete this.arr[i]);
+    }
+}
+let newsObj = new NewsFeed(['Новости спорта',
+    'Погода на #завтра',
+    'Происшествия за #сегодня',
+    'Новости политики'
+])
+document.write(newsObj.print());
+newsObj.newPush('Последние новости часа');
+console.log(newsObj);
+newsObj.newDelete(2);
+console.log(newsObj);
+newsObj.get();
