@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--before / beforebegin-->
+<div id="container" style="border: 1px solid black">
+<!--prepend / afterbegin-->
+    <p>Lorem ipsum dolor sit amet.</p>
+<!--append / beforeend-->
+</div>
+<!--after / afterend-->
+
+
+
+
+<script>
+    let objMenuArray=[
+        {text: 'GOOGLE', href: 'http://google.com'},
+        {text: 'MAIL.RU', href: 'http://mail.ru'},
+        {text: 'YANDEX', href: 'http://yandex.ru'},
+        {text: 'RAMBLER', href: 'http://rambler.ru'}
+    ]
+
+
+
+    //Создание элементов
+    let cont=document.querySelector('#container')
+    let el=document.createElement('a')
+    el.innerText='YANDEX'
+    el.target='_blank'
+    el.href="http://ya.ru"
+    el.style.fontSize='18px'
+    el.style.textDecoration='none'
+
+    //Способ 1: before, prepend, append,after
+    cont.prepend(el)
+
+    //Способ 2: beforebegin, afterbegin, beforeend, afterend
+    let el2=document.createElement('img')
+    el2.alt='photo'
+    cont.insertAdjacentElement('afterend',el2)
+
+  debugger
+    let menu='<ul>'
+        objMenuArray.forEach(item=>{
+            debugger
+            menu+='<li>'
+            menu+=`<a href="${item.href}" target="_blank">${item.text}</a>`
+            menu+='</li>'
+        })
+
+    menu+='</ul>'
+    cont.insertAdjacentHTML('beforebegin',menu)
+
+    //Удаление элемента
+    cont.remove()
+
+
+
+</script>
+</body>
+</html>
