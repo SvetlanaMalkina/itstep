@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="tSection">
+    <div class="t1">
+        <div class="center" id="center">
+            <span style="color:white; font-size:24px">Сегодня:</span>
+            <span style="color:white; font-size:24px; font-weight: bolder; text-transform:uppercase">
+                <span id="realDay"></span> <span id="realMonth"></span> <span id="realYears"></span>
+                <span id="realHour"></span> : <span id="realMinutes"></span> : <span id="realSeconds"></span>
+            </span>
+        </div>
+        <img class="gear" src="images/gear.png">
+    </div>
+    <div class="settings">
+        <img class="gear-active" src="images/gear.png">
+        <div class="cont-weekend">
+            <button class="choosing-weekend weekend" id="choosing-weekend">ВЫБРАТЬ ВЫХОДНЫЕ</button>
+            <button class="save-weekend weekend" id="save-weekend">СОХРАНИТЬ</button>
+        </div>
+    </div>
+    <div class="cont-weather">
+        <input id='inputWeather' class="inputWeather" type="text" placeholder="Введите город">
+        <ul id="weather" class="weather"></ul>
+    </div>
+
+</div>
+<div class="parent" id="parent">
+    <div class="calendar" id="calendar">
+        <div class="nav">
+            <a href="#" class="arrow prev">←</a>
+            <div id="info" class="info">Сентябрь 2021</div>
+            <a href="#" class="arrow next">→</a>
+        </div>
+        <table>
+            <thead>
+            <tr id="days" class="days">
+                <th class="weekday">ПН</th>
+                <th class="weekday">ВТ</th>
+                <th class="weekday">СР</th>
+                <th class="weekday">ЧТ</th>
+                <th class="weekday">ПТ</th>
+                <th class="weekend">СБ</th>
+                <th class="weekend">ВС</th>
+            </tr>
+            </thead>
+            <tbody id="body-cal" class="body-cal"></tbody>
+        </table>
+    </div>
+</div>
+<script src="script.js"></script>
+<script src="clock-date.js"></script>
+</body>
+</html>

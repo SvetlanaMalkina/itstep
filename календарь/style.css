@@ -1,0 +1,170 @@
+body{
+    background: radial-gradient(circle, rgba(12,92,161,1) 0%, rgba(7,29,55,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.upper-container{
+    width: 550px;
+    height: 200px;
+    border: 3px solid black;
+    margin: 0 auto;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+/* Верхушка */
+.tSection{
+    width: 550px;
+    min-height: 200px;
+    border: 3px solid black;
+    margin: 0 auto;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.t1{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background: #038fcf;
+    border-bottom: 2px solid white;
+}
+.center{
+    padding-top: 5px;
+}
+
+.gear{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.settings{
+    width: 550px;
+    height: 70px;
+    display: none;
+    background: radial-gradient(circle, rgba(12,92,161,1) 0%, rgba(7,29,55,1) 100%);
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.gear-active{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.cont-weekend{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.active{
+    background-color: red;
+    color: black;
+}
+.choosing-weekend{
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: red;
+}
+.save-weekend{
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: red;
+}
+.cont-weather{
+    display: flex;
+}
+.wItem{
+    list-style-type: none;
+    font-size: 18px;
+    color: #2d2502;
+}
+.parent {
+    border: 2px solid black;
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+}
+.calendar {
+    border: 2px solid black;
+    display: inline-block;
+}
+.calendar td, .calendar th {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+}
+.today{
+    color: khaki;
+}
+.weekD{
+    color: red;
+}
+.weekend{
+    color: red;
+}
+.cont-weather{
+    background-color: lightskyblue;
+    height: 150px;
+}
+.inputWeather{
+    width: 150px;
+    height: 30px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 3px;
+}
+.weather{
+    font-size: 18px;
+}
+.selection{
+    background-color: lightskyblue;
+    color: black;
+}
+.nav{
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    font-family: "Arial Black";
+    color: khaki;
+}
+.days{
+    font-size: 24px;
+}
+.weekday{
+    color: khaki;
+}
+
+.info {
+
+}
+.arrow {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+.arrow:hover {
+    color: red;
+}
+
+#calendar .active {
+    color: red;
+}
+.body-cal{
+    font-size: 25px;
+    color: white;
+}
